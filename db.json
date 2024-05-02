@@ -1,0 +1,31 @@
+{
+    "listings": [
+      {
+        "id": 1,
+        "type": "Truck",
+        "year": "2022",
+        "make": "Chevrolet",
+        "model": "Silverado 1500 LTD LT",
+        "image": "https://img2.carmax.com/assets/25718556/hero.jpg?width=400&height=300",
+        "price": "$35,000"
+      },
+      {
+        "id": 2,
+        "type": "Car",
+        "year": "2020",
+        "make": "Ford",
+        "model": "Fusion Hybrid SE",
+        "image": "https://img2.carmax.com/assets/25817095/hero.jpg?width=400&height=300",
+        "price": "$21,000"
+      },
+      {
+        "id": 3,
+        "type": "SUV",
+        "year": "2023",
+        "make": "Toyota",
+        "model": "4Runner TRD Sport",
+        "image": "https://img2.carmax.com/assets/25739512/hero.jpg?width=400&height=300",
+        "price": "$43,998"
+      }
+    ]
+  }
