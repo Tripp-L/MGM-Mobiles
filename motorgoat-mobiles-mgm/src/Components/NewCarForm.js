@@ -42,3 +42,5 @@ function NewCarForm({ addCar }) {
         </div>
     )
 }
+
+export default NewCarForm;
