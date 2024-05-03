@@ -22,4 +22,8 @@ function CarCard({ car }) {
   );
 }
 
+<<<<<<< HEAD
 export default CarCard;
+=======
+export default CarCard;
+>>>>>>> main
