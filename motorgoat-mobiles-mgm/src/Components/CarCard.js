@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function CarCard({ car }) {
-  const { id, type, year, make, model, image, price } = car
+  const [ id, year, make, model, image, price ] = car
   const [ available, setAvailable ] = useState(true)
 
   function handleAvailableClick() {
@@ -10,7 +10,7 @@ function CarCard({ car }) {
 
   return (
     <li className="card">
-      <img src={image} alt={type} />
+      <img src={image} alt={year} />
       <h1>{year} {make} {model} </h1>
       <p>Price: {price}</p>
       {available ? (
@@ -22,8 +22,4 @@ function CarCard({ car }) {
   );
 }
 
-<<<<<<< HEAD
 export default CarCard;
-=======
-export default CarCard;
->>>>>>> main
