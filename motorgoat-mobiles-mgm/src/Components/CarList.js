@@ -12,3 +12,4 @@ function CarList({ car }) {
 }
 
 export default CarList;
+
