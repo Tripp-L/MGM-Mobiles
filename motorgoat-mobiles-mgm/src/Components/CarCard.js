@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import App from "./App";
 
 function CarCard({ listings }) {
   const [ year, make, model, image, price ] = listings
