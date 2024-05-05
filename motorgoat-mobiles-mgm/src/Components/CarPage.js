@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import CarList from "./CarList";
-import Search from "./Search";
 import NewCarForm from "./NewCarForm";
+import CarCard from "./CarCard";
 
-function CarPage() {
-    const [ car, setCar ] = useState('')
-    const [ id, type, year, make, model, image, price ] = car
+function CarPage({ listings }) {
+
     return (
         <main>
+            <CarCard key={listings.id} listings={listings} />
+            <CarList listings={listings} />
             <NewCarForm />
-            <Search />
-            <CarList setCar={setCar} car={car} />
         </main>
     )
 }

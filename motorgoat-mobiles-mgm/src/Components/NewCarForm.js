@@ -38,6 +38,7 @@ function NewCarForm({ addCar }) {
                 <input type="text" name="model" placeholder="Model" value={formData.model} onChange={handleInputChange} />
                 <input type="text" name="image" placeholder="Image URL" value={formData.image} onChange={handleInputChange} />
                 <input type="text" name="price" placeholder="Price" value={formData.price} onChange={handleInputChange} />
+                <button type="submit">Add Car</button>
             </form>
         </div>
     )
