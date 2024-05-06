@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-// import Header from "./Header";
-// import CarPage from "./CarPage";
+import Header from "./Header";
+import CarPage from "./CarPage";
 
-function App({ cars }) {
+function App() {
     const [listings, setListings] = useState([])
     const [searchTerm, setSearchTerm] = useState("")
 
