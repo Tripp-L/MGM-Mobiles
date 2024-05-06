@@ -26,6 +26,15 @@
         "model": "4Runner TRD Sport",
         "image": "https://img2.carmax.com/assets/25739512/hero.jpg?width=400&height=300",
         "price": "$43,998"
+      },
+      {
+        "id": 4,
+        "type": "Car",
+        "year": "2019",
+        "make": "Dodge",
+        "model": "Charger SXT",
+        "image": "https://img2.carmax.com/assets/25739574/hero.jpg?width=800&height=450",
+        "price": "$21,000"
       }
     ]
   }

@@ -8,7 +8,6 @@ function CarCard({ type, year, make, model, image, price }) {
   }
 
   return (
-
     <li className="card" data-testid={"car-item"} >
       <img src={image} alt={type} />
       <h4>{type} </h4>
