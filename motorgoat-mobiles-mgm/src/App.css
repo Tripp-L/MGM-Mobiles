@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+nav.navbar {
+  background-color: white;
+  font-size: 25px;
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+}
+
+.navrow {
+  mix-blend-mode: multiply;
+}
