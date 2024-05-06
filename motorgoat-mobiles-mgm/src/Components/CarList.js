@@ -2,13 +2,13 @@ import React from "react";
 import CarCard from "./CarCard";
 
 function CarList({ listings, searchTerm }) {
-    const filteredListings = listings.filter(car =>
+    const filteredListings = searchTerm ? listings.filter(car =>
         car.type.toLowerCase().includes(searchTerm.toLowerCase()) ||
         car.make.toLowerCase().includes(searchTerm.toLowerCase()) ||
         car.model.toLowerCase().includes(searchTerm.toLowerCase()) ||
         car.year.toLowerCase().includes(searchTerm.toLowerCase()) ||
         car.price.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    ) : [];
 
     return (
         <ul className="car-list">
@@ -20,5 +20,6 @@ function CarList({ listings, searchTerm }) {
 }
 
 export default CarList;
+
 
 
