@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function NewCarForm({ setCars }) {
+function NewCarForm({ setListings }) {
     const [formData, setFormData] = useState({})
 
     function handleInputChange(e) {
@@ -10,14 +10,14 @@ function NewCarForm({ setCars }) {
 
     function handleSubmit(e) {
         e.preventDefault()
-        setCars((prevCars) => [...prevCars, formData])
+        setListings((prevListings) => [...prevListings, formData])
         setFormData({})
     }
 
     return (
         <div className="new-car-form">
-            <h2>Sell Your Car Here! 🚗</h2>
             <form onSubmit={handleSubmit}>
+                <h2>Sell Your Car Here! 🚗</h2>
                 <input type="text" name="type" placeholder="Type" value={formData.type} onChange={handleInputChange} />
                 <input type="text" name="year" placeholder="Year" value={formData.year} onChange={handleInputChange} />
                 <input type="text" name="make" placeholder="Make" value={formData.make} onChange={handleInputChange} />
@@ -31,3 +31,5 @@ function NewCarForm({ setCars }) {
 }
 
 export default NewCarForm;
+
+
