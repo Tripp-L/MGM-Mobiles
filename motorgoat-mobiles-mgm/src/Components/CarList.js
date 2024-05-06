@@ -1,15 +1,19 @@
 import React from "react";
-import Search from "./Search";
+import CarCard from "./CarCard";
 
-function CarList({ listings, searchTerm, handleAvailable }) {
-    const filterListings = listings.filter((car) =>
-        listings.make.toLowerCase().includes(searchTerm.toLowerCase())
-    )
+function CarList({ car }) {
 
     return (
-        <ul className="car-list">
-            {filterListings.map((listing) => (
-              <Search key={listing.id} listings={listings} />
+        <ul className="car-list" >
+            {car?.map((car) => (
+                    <CarCard key={car.id}
+                    type={car.type} 
+                    year={car.year} 
+                    make={car.make} 
+                    model={car.model}
+                    image={car.image}
+                    price={car.price}
+                />
             ))}
         </ul>
     )
