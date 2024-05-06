@@ -2,6 +2,7 @@
 import React, { useState, useEffect  } from "react";
 import CarCard from "./CarCard";
 
+<<<<<<< HEAD
 function CarList({ car }) {
     const [cars, setCars] = useState([])
 
@@ -11,10 +12,13 @@ function CarList({ car }) {
        .then((data) => setCars(data.cars))
     }, [])
 
+=======
+function CarList({ listings }) {
+>>>>>>> refs/remotes/origin/Zack
 
     return (
         <ul className="car-list" >
-            {car?.map((car) => (
+            {listings?.map((car) => (
                     <CarCard key={car.id}
                     type={car.type} 
                     year={car.year} 
