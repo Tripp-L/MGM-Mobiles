@@ -9,7 +9,6 @@ import "../App.css";
 function Navbar() {
     const location = useLocation();
     
-
     return (
         <nav class="navbar">
             <Container>
