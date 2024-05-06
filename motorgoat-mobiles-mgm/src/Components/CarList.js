@@ -1,3 +1,4 @@
+
 import React from "react";
 import CarCard from "./CarCard";
 
@@ -14,8 +15,9 @@ function CarList({ car }) {
                     image={car.image}
                     price={car.price}
                 />
+
             ))}
-        </ul>
+        </div>
     )
 }
 
