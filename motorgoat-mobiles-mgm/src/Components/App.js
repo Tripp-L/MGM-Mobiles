@@ -4,17 +4,18 @@ import CarPage from "./CarPage";
 
 function App() {
     const [listings, setListings] = useState([])
+    const [searchTerm, setSearchTerm] = useState("")
 
     useEffect(() => {
-        fetch("http://localhost:3000/listings")
+        fetch("http://localhost:3001/listings")
        .then((res) => res.json())
-       .then((data) => setListings(data.listings))
+       .then((data) => setListings(data))
     }, [])
 
     return (
         <div className="app">
-            <Header />
-            <CarPage listings={listings} />
+            <Header setSearchTerm={setSearchTerm} />
+            <CarPage listings={listings} searchTerm={searchTerm} setListings={setListings} setSearchTerm={setSearchTerm} /> 
         </div>
     );
 }

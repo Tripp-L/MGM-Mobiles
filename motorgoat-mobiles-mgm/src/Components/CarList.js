@@ -2,11 +2,11 @@
 import React from "react";
 import CarCard from "./CarCard";
 
-function CarList({ car }) {
+function CarList({ listings }) {
 
     return (
         <ul className="car-list" >
-            {car?.map((car) => (
+            {listings?.map((car) => (
                     <CarCard key={car.id}
                     type={car.type} 
                     year={car.year} 
