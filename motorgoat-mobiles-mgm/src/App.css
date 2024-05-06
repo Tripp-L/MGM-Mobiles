@@ -52,8 +52,10 @@ nav.navbar {
   padding: 20px;
   font-family: Arial;
   text-align: center;
+  float: left;
 }
 
 .navrow {
   mix-blend-mode: multiply;
 }
+
