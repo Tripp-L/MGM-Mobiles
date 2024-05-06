@@ -8,12 +8,30 @@ function CarCard({ type, year, make, model, image, price }) {
   }
 
   return (
+<<<<<<< HEAD
     <li className="card" data-testid={"car-item"} >
       <img src={image} alt={type} />
       <h4>{type} </h4>
       <p>Year: {year}</p>
       <p>Make: {make}</p>
       <p>Model: {model}</p>
+=======
+<<<<<<< HEAD
+    <li className="card" data-testid={`car-item-${id}`} >
+      <img src={image} alt={`${make} ${model}`} />
+      <h4>{`${year} ${make} ${model}`} </h4>
+=======
+
+    <li className="card" data-testid={"car-item"} >
+      <img src={image} alt={type} />
+      <h4>{type} </h4>
+>>>>>>> refs/remotes/origin/Zack
+      <p>Type: {type}</p>
+      <p>Year: {year}</p>
+      <p>Make: {make}</p>
+      <p>Model: {model}</p>
+
+>>>>>>> refs/remotes/origin/main
       <p>Price: {price}</p>
       {available ? (
         <button onClick={handleAvailableClick} className="primary">Available!</button>

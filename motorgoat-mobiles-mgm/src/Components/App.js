@@ -5,7 +5,7 @@ import CarPage from "./CarPage";
 import CarList from "./CarList";
 import NewCarForm from "./NewCarForm";
 
-function App() {
+function App({ cars }) {
     const [listings, setListings] = useState([])
     const [searchTerm, setSearchTerm] = useState("")
 
@@ -30,5 +30,6 @@ function App() {
         </Router>
     );
 }
+
 
 export default App;
