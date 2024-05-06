@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState, useEffect  } from "react";
 import CarCard from "./CarCard";
 
 function CarList({ listings }) {
@@ -17,7 +17,7 @@ function CarList({ listings }) {
                 />
 
             ))}
-        </div>
+        </ul>
     )
 }
 
