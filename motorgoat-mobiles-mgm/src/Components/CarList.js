@@ -1,8 +1,16 @@
 
-import React from "react";
+import React, { useState, useEffect  } from "react";
 import CarCard from "./CarCard";
 
 function CarList({ car }) {
+    const [cars, setCars] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:3000/listings")
+       .then((res) => res.json())
+       .then((data) => setCars(data.cars))
+    }, [])
+
 
     return (
         <ul className="car-list" >
@@ -17,7 +25,7 @@ function CarList({ car }) {
                 />
 
             ))}
-        </div>
+        </ul>
     )
 }
 

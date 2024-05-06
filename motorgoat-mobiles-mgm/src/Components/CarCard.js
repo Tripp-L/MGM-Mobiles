@@ -9,7 +9,6 @@ function CarCard({ car }) {
   }
 
   return (
-
     <li className="card" data-testid={`car-item-${id}`} >
       <img src={image} alt={`${make} ${model}`} />
       <h4>{`${year} ${make} ${model}`} </h4>
@@ -21,7 +20,7 @@ function CarCard({ car }) {
       ) : (
         <button onClick={handleAvailableClick} className="secondary">Sold!</button>
       )}
-    </ul>
+    </li>
   );
 }
 
