@@ -5,7 +5,7 @@ import CarPage from "./CarPage";
 import CarList from "./CarList";
 import NewCarForm from "./NewCarForm";
 
-function App({ cars }) {
+function App() {
     const [listings, setListings] = useState([])
     const [searchTerm, setSearchTerm] = useState("")
 
