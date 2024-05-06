@@ -4,7 +4,7 @@ import Header from "./Header";
 import CarPage from "./CarPage";
 import CarList from "./CarList"; 
 import NewCarForm from "./NewCarForm";
-import Search from "./Search"; 
+import Navbar from "./Navbar";
 
 function App() {
     const [listings, setListings] = useState([])
@@ -20,6 +20,7 @@ function App() {
         <Router>
             <div className="app">
                 <Header setSearchTerm={setSearchTerm} />
+                <Navbar />
                 <Routes>
                     <Route path="/car" element={<CarList listings={listings.filter(car => car.type === 'Car')} searchTerm={searchTerm} />} />
                     <Route path="/truck" element={<CarList listings={listings.filter(car => car.type === 'Truck')} searchTerm={searchTerm} />} />
