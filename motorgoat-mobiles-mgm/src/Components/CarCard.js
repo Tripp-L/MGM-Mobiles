@@ -11,7 +11,6 @@ function CarCard({ type, year, make, model, image, price }) {
     <li className="card" data-testid={"car-item"} >
       <img src={image} alt={type} />
       <h4>{type} </h4>
-      <p>Type: {type}</p>
       <p>Year: {year}</p>
       <p>Make: {make}</p>
       <p>Model: {model}</p>

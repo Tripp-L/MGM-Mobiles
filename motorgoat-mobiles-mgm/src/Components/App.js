@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./Header";
 import CarPage from "./CarPage";
+import CarList from "./CarList";
+import NewCarForm from "./NewCarForm";
 
 function App() {
     const [listings, setListings] = useState([])
@@ -13,10 +16,18 @@ function App() {
     }, [])
 
     return (
-        <div className="app">
-            <Header setSearchTerm={setSearchTerm} />
-            <CarPage listings={listings} searchTerm={searchTerm} setListings={setListings} setSearchTerm={setSearchTerm} /> 
-        </div>
+        <Router>
+            <div className="app">
+                <Header setSearchTerm={setSearchTerm} />
+                <Routes>
+                    <Route path="/" element={<CarPage listings={listings} searchTerm={searchTerm} setListings={setListings} setSearchTerm={setSearchTerm} />} />
+                    <Route path="/car" element={<CarList listings={listings.filter(car => car.type === 'Car')} searchTerm={searchTerm} />} />
+                    <Route path="/truck" element={<CarList listings={listings.filter(car => car.type === 'Truck')} searchTerm={searchTerm} />} />
+                    <Route path="/suv" element={<CarList listings={listings.filter(car => car.type === 'SUV')} searchTerm={searchTerm} />} />
+                    <Route path="/new-car" element={<NewCarForm setListings={setListings} />} />
+                </Routes>
+            </div>
+        </Router>
     );
 }
 
