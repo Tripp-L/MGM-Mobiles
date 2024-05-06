@@ -1,17 +1,21 @@
-import React from "react";
-import Search from "./Search";
+import React, { useState, useEffect } from "react";
+import CarCard from "./CarCard";
 
-function CarList({ listings, searchTerm, handleAvailable }) {
-    const filterListings = listings.filter((car) =>
-        listings.make.toLowerCase().includes(searchTerm.toLowerCase())
-    )
+function CarList() {
+    const[cars, setCars]= useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:3000/listings")
+       .then(res => res.json())
+       .then(cars => setCars(cars))
+    }, [])
 
     return (
-        <ul className="car-list">
-            {filterListings.map((listing) => (
-              <Search key={listing.id} listings={listings} />
+        <div className="car-list">
+            {cars.map((car) => (
+                <CarCard key={car.id} car={car} />
             ))}
-        </ul>
+        </div>
     )
 }
 

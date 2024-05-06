@@ -9,7 +9,7 @@ function CarCard({ listings }) {
   }
 
   return (
-    <li className="card">
+    <ul className="card">
       <img src={image} alt={make} />
       <h1>Find Your New Ride! </h1>
       <p>Year: {year}</p>
@@ -21,7 +21,7 @@ function CarCard({ listings }) {
       ) : (
         <button onClick={handleAvailableClick} className="secondary">Sold</button>
       )}
-    </li>
+    </ul>
   );
 }
 
