@@ -37,14 +37,22 @@
   }
 }
 
+Header {
+  background-image: url('https://www.co.wallowa.or.us/sites/g/files/vyhlif10466/files/media/home-page/image/71/road.jpg');
+  background-size: cover;
+}
+
 .header {
   font-family: "Sedgwick Ave Display";
   text-decoration: underline;
   text-align: center;
   font-size: 30px;
   padding: 10px;
-  background-color: black;
-  color: teal;
+  color: #61dafb;
+}
+
+.heading#heading {
+/* backdrop-filter: blur(30px); */
 }
 
 .head-pic {
