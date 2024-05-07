@@ -10,9 +10,9 @@ function Navbar() {
     const location = useLocation();
     
     return (
-        <nav class="navbar">
+        <nav className="navbar">
             <Container>
-               <Row class="navrow">
+               <Row className="navrow">
                  <Col xs={6} md={4}>
                     {location.pathname !== "/" && <Link to="/">Home</Link>}
                  </Col>
