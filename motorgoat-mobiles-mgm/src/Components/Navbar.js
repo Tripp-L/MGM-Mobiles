@@ -6,7 +6,7 @@ import "../App.css";
 
 function Navbar() {
     const location = useLocation();
-    
+
     return (
         <nav className="navbar">
             <Container>
@@ -21,14 +21,14 @@ function Navbar() {
                         } 
                     </Link>
 
-                    <Link to="/car" className="nav-link">
+                    <Link to="/cars" className="nav-link">
                         <div className="nav-item">
                             <Image className="nav-image" src="https://t3.ftcdn.net/jpg/00/79/71/36/360_F_79713649_GqVb9ZF7lj2JU2SO7BC2f1aZuvJ2GeiM.jpg" thumbnail />
                             <span className="nav-text">Cars</span>
                         </div>
                     </Link>
 
-                    <Link to="/truck" className="nav-link">
+                    <Link to="/trucks" className="nav-link">
                         <div className="nav-item">
                             <Image className="nav-image" src="https://media.istockphoto.com/id/485787194/photo/generic-silver-pickup-truck.jpg?s=612x612&w=0&k=20&c=sQ3b0fE6FJXCHag-gF4naMzTj8WAlkl4MVafd4EyNyQ=" thumbnail />
                             <span className="nav-text">Trucks</span>
@@ -48,13 +48,14 @@ function Navbar() {
                             <span className="nav-text">Sell Your Car Here!! </span>
                         </div>
                     </Link>
-                </div>  
-            </Container>     
+                </div>
+            </Container>
         </nav>
     )
 }
 
 export default Navbar;
+
 
 
 
