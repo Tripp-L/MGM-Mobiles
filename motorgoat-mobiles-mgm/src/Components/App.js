@@ -14,9 +14,9 @@ function App() {
         fetch("http://localhost:3001/listings")
             .then((res) => res.json())
             .then((data) => setListings(data))
+            .catch((error) => console.error("Error fetching data:", error));
     }, []);
 
-  
     const filteredListings = listings.filter(car =>
         car.type.toLowerCase().includes(searchTerm.toLowerCase()) ||
         car.make.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -31,9 +31,9 @@ function App() {
                 <Header setSearchTerm={setSearchTerm} /> 
                 <Navbar /> 
                 <Routes>
-                    <Route path="/car" element={<CarList listings={filteredListings.filter(car => car.type === 'Car')} />} />
-                    <Route path="/truck" element={<CarList listings={filteredListings.filter(car => car.type === 'Truck')} />} />
-                    <Route path="/suv" element={<CarList listings={filteredListings.filter(car => car.type === 'SUV')} />} />
+                    <Route path="/cars" element={<CarList listings={listings} />} />
+                    <Route path="/trucks" element={<CarList listings={listings.filter(car => car.type === 'Truck')} />} />
+                    <Route path="/suv" element={<CarList listings={listings.filter(car => car.type === 'SUV')} />} />
                     <Route path="/new-car" element={<NewCarForm setListings={setListings} />} />
                     <Route path="/" element={<CarPage listings={filteredListings} />} />
                 </Routes>
@@ -43,6 +43,7 @@ function App() {
 }
 
 export default App;
+
 
 
 

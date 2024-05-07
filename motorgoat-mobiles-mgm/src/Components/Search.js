@@ -14,3 +14,4 @@ function Search({ setSearchTerm }) {
 }
 
 export default Search;
+
