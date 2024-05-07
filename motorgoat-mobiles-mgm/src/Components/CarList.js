@@ -9,7 +9,7 @@ function CarList({ listings }) {
                     <CarCard key={car.id} {...car} />
                 ))
             ) : (
-                <p>No listings available</p>
+                <p></p>
             )}
         </div>
     );

@@ -2,7 +2,7 @@ import React from "react";
 
 function Search({ setSearchTerm }) {
     function handleInputChange(e) {
-        setSearchTerm(e.target.value);
+        setSearchTerm(e.target.value)
     }
 
     return (
@@ -18,4 +18,5 @@ function Search({ setSearchTerm }) {
 }
 
 export default Search;
+
 
