@@ -1,7 +1,5 @@
 import React from "react";
-import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
 import { Link, useLocation } from "react-router-dom";
 import "../App.css";
@@ -12,38 +10,51 @@ function Navbar() {
     return (
         <nav className="navbar">
             <Container>
-               <Row className="navrow">
-                 <Col xs={6} md={4}>
-                    {location.pathname !== "/" && <Link to="/">Home</Link>}
-                 </Col>
-
-                 <Col xs={6} md={4}>    
-                    <Link to="/car">Cars
-                      <Image style={{width:"150px", height:"100px"}} src="https://t3.ftcdn.net/jpg/00/79/71/36/360_F_79713649_GqVb9ZF7lj2JU2SO7BC2f1aZuvJ2GeiM.jpg" thumbnail /> 
+                <div className="navrow">
+                    <Link to="/" className="nav-link">
+                        {location.pathname !== "/" ?
+                            <div className="nav-item">
+                                <Image className="nav-image" src="https://snapseo.ca/wp-content/uploads/Car-dealership.jpg" thumbnail />
+                                <span className="nav-text">Home</span>
+                            </div>
+                            : null
+                        } 
                     </Link>
-                 </Col>   
 
-                 <Col xs={6} md={4}>
-                    <Link to="/truck">Trucks 
-                      <Image style={{width:"150px", height:"100px"}} src="https://media.istockphoto.com/id/485787194/photo/generic-silver-pickup-truck.jpg?s=612x612&w=0&k=20&c=sQ3b0fE6FJXCHag-gF4naMzTj8WAlkl4MVafd4EyNyQ=" thumbnail />
+                    <Link to="/car" className="nav-link">
+                        <div className="nav-item">
+                            <Image className="nav-image" src="https://t3.ftcdn.net/jpg/00/79/71/36/360_F_79713649_GqVb9ZF7lj2JU2SO7BC2f1aZuvJ2GeiM.jpg" thumbnail />
+                            <span className="nav-text">Cars</span>
+                        </div>
                     </Link>
-                 </Col>  
 
-                 <Col xs={6} md={4}> 
-                    <Link to="/suv">SUVs
-                      <Image style={{width:"150px", height:"100px"}} src="https://media.istockphoto.com/id/949409516/photo/3d-illustration-of-generic-suv-car-on-white.jpg?s=612x612&w=0&k=20&c=HDZCkGDi4wM8UI-hFwoHoHGQun75lx9OuYf0-4t-OI8=" thumbnail />
+                    <Link to="/truck" className="nav-link">
+                        <div className="nav-item">
+                            <Image className="nav-image" src="https://media.istockphoto.com/id/485787194/photo/generic-silver-pickup-truck.jpg?s=612x612&w=0&k=20&c=sQ3b0fE6FJXCHag-gF4naMzTj8WAlkl4MVafd4EyNyQ=" thumbnail />
+                            <span className="nav-text">Trucks</span>
+                        </div>
                     </Link>
-                 </Col>   
 
-                 <Col xs={6} md={4}> 
-                    <Link to="/new-car">Sell Your Car Here!!
-                      <Image style={{width:"150px", height:"100px"}} src="https://cashncarryparts.com/wp-content/uploads/2023/10/cash-for-cars.png" thumbnail />
+                    <Link to="/suv" className="nav-link">
+                        <div className="nav-item">
+                            <Image className="nav-image" src="https://media.istockphoto.com/id/949409516/photo/3d-illustration-of-generic-suv-car-on-white.jpg?s=612x612&w=0&k=20&c=HDZCkGDi4wM8UI-hFwoHoHGQun75lx9OuYf0-4t-OI8=" thumbnail />
+                            <span className="nav-text">SUVs</span>
+                        </div>
                     </Link>
-                 </Col>        
-               </Row>  
+
+                    <Link to="/new-car" className="nav-link">
+                        <div className="nav-item">
+                            <Image className="nav-image" id="sell" src="https://cashncarryparts.com/wp-content/uploads/2023/10/cash-for-cars.png" thumbnail />
+                            <span className="nav-text">Sell Your Car Here!! </span>
+                        </div>
+                    </Link>
+                </div>  
             </Container>     
         </nav>
     )
 }
 
 export default Navbar;
+
+
+
