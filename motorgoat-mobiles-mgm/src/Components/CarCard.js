@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Container from 'react-bootstrap/Container';
 
 function CarCard({ type, year, make, model, image, price }) {
   const [ available, setAvailable ] = useState(true)
@@ -8,7 +9,7 @@ function CarCard({ type, year, make, model, image, price }) {
   }
 
   return (
-    <container className="card" data-testid={"car-item"} >
+    <Container className="card" data-testid={"car-item"} >
         <p>
         {available ? (
           <button onClick={handleAvailableClick} className="primary">Available!</button>
@@ -20,7 +21,7 @@ function CarCard({ type, year, make, model, image, price }) {
         <p>{year} {make}</p>
         <p>{model}</p>
         <p>Price: {price}</p>
-      </container>
+      </Container>
   );
 }
 
