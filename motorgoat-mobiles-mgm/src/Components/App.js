@@ -13,14 +13,14 @@ function App() {
     useEffect(() => {
         fetch("http://localhost:3001/listings")
             .then((res) => res.json())
-            .then((data) => setListings(data.listings)) 
+            .then((data) => setListings(data)) 
             .catch((error) => console.error("Error fetching data:", error))
     }, [])
 
     return (
         <Router>
             <div className="app">
-                <Header setSearchTerm={setSearchTerm} /> 
+                <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> 
                 <Navbar /> 
                 <Routes>
                     <Route path="/cars" element={<CarList listings={listings.filter(car => car.type === 'Car')} />} />
