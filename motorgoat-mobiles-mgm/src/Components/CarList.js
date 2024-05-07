@@ -1,30 +1,26 @@
 import React from "react";
 import CarCard from "./CarCard";
 
-function CarList({ listings, searchTerm }) {
-
-    const filteredListings = (listings || []).filter(car =>
-        car.type.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        car.make.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        car.model.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        car.year.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        car.price.toLowerCase().includes(searchTerm.toLowerCase())
-    )
-
+function CarList({ listings }) {
     return (
         <div className="car-list">
-            {filteredListings.length > 0 ? (
-                filteredListings.map(car => (
+            {listings ? (
+                listings.map(car => (
                     <CarCard key={car.id} {...car} />
                 ))
             ) : (
-                <p>No listings match your search</p>
+                <p>No listings available</p>
             )}
         </div>
     );
 }
 
 export default CarList;
+
+
+
+
+
 
 
 
