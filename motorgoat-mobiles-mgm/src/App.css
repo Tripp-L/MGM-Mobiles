@@ -45,17 +45,39 @@
   color: teal;
 }
 
-nav.navbar {
-  background-color: white;
-  font-size: 25px;
-  color: teal;
+.navbar {
+  background-color: transparent;
+  font-size: 16px;
   padding: 20px;
   font-family: Arial;
   text-align: center;
-  float: left;
+  color: White;
+  border: #61dafb solid;
+  border-width: 5px;
+  border-radius: 10%;
 }
 
 .navrow {
-  mix-blend-mode: multiply;
+  display: flex;
+  justify-content: space-between;
+  /* mix-blend-mode: multiply; */
 }
+
+.nav-link {
+  color: #61dafb;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  color: #42d449;
+}
+
+.nav-image {
+  width: 150px;
+  height: 100px;
+  margin-left: 10px; 
+}
+
 
