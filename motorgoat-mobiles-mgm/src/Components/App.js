@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./Header";
 import CarPage from "./CarPage";
 import NewCarForm from "./NewCarForm";
-import Navbar from "./Navbar"; 
-import CarCard from "./CarCard";
+import CarList from "./CarList";
+import Navbar from "./Navbar";
 
 function App() {
     const [listings, setListings] = useState([])
@@ -31,9 +31,9 @@ function App() {
                 <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> 
                 <Navbar /> 
                 <Routes>
-                    <Route path="/cars" element={<CarCard listings={filteredListings.filter(car => car.make === 'Car')} />} />
-                    <Route path="/trucks" element={<CarCard listings={filteredListings.filter(car => car.make === 'Truck')} />} />
-                    <Route path="/suv" element={<CarCard listings={filteredListings.filter(car => car.make === 'SUV')} />} />
+                    <Route path="/cars" element={<CarList listings={filteredListings.filter(car => car.make === 'Car')} />} />
+                    <Route path="/trucks" element={<CarList listings={filteredListings.filter(car => car.make === 'Truck')} />} />
+                    <Route path="/suv" element={<CarList listings={filteredListings.filter(car => car.make === 'SUV')} />} />
                     <Route path="/new-car" element={<NewCarForm setListings={setListings} />} />
                     <Route path="/" element={<CarPage />} />
                 </Routes>
