@@ -45,6 +45,11 @@
   color: teal;
 }
 
+.head-pic {
+  width: 400px;
+  height: 180px;
+}
+
 .navbar {
   background-color: transparent;
   font-size: 16px;
@@ -80,4 +85,16 @@
   margin-left: 10px; 
 }
 
+.nav-text {
+  position: relative;
+  top: 15px;
+  left: -105px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.nav-image#sell {
+  position: relative;
+  left: 35px;
+}
 

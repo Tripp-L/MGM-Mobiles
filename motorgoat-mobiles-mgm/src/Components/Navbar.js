@@ -12,7 +12,13 @@ function Navbar() {
             <Container>
                 <div className="navrow">
                     <Link to="/" className="nav-link">
-                        {location.pathname !== "/" ? 'Home' : ''}
+                        {location.pathname !== "/" ?
+                            <div className="nav-item">
+                                <Image className="nav-image" src="https://snapseo.ca/wp-content/uploads/Car-dealership.jpg" thumbnail />
+                                <span className="nav-text">Home</span>
+                            </div>
+                            : null
+                        } 
                     </Link>
 
                     <Link to="/car" className="nav-link">
@@ -38,8 +44,8 @@ function Navbar() {
 
                     <Link to="/new-car" className="nav-link">
                         <div className="nav-item">
-                            <Image className="nav-image" src="https://cashncarryparts.com/wp-content/uploads/2023/10/cash-for-cars.png" thumbnail />
-                            <span className="nav-text">Sell Your Car Here!!</span>
+                            <Image className="nav-image" id="sell" src="https://cashncarryparts.com/wp-content/uploads/2023/10/cash-for-cars.png" thumbnail />
+                            <span className="nav-text">Sell Your Car Here!! </span>
                         </div>
                     </Link>
                 </div>  
