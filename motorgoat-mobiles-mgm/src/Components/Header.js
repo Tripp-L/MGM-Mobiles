@@ -7,7 +7,7 @@ function Header({ setSearchTerm }) {
 
     return (
         <header className="header">
-            <h1>MotorGOAT-Mobiles</h1>
+            <h1 className="heading" id="heading">MotorGOAT-Mobiles</h1>
             <img className="head-pic" src="https://img.freepik.com/premium-photo/funny-goats-driving-with-cargenerative-ai_847296-3673.jpg" alt="Logo" />
             {location.pathname !== '/new-car' && <Search setSearchTerm={setSearchTerm} />}
         </header>
