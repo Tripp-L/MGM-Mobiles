@@ -50,6 +50,7 @@ Header {
   font-size: 30px;
   padding: 10px;
   color: #61dafb;
+  text-shadow: -2px -2px 0 #000, -2px -2px #000;
 }
 
 /* .heading#heading {
@@ -292,3 +293,16 @@ div.new-form {
   object-fit: cover;
 }
 
+.search-label#label {
+  text-shadow: -2px -2px 0 #000, -2px -2px #000;
+}
+
+.primary {
+  color: black;
+  background-color: green;
+}
+
+.secondary {
+  color: black;
+  background-color: red;
+}
