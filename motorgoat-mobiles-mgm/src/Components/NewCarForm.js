@@ -33,6 +33,7 @@ function NewCarForm() {
     }
 
     return (
+      <div> 
         <div className="new-car-form">
             <form onSubmit={handleSubmit}>
                 <h2>💲 Sell Your Car Here! 💲</h2>
@@ -44,9 +45,12 @@ function NewCarForm() {
                 <input type="text" name="price" placeholder="Price" value={inputValues.price || ''} onChange={handleInputChange} />
                 <button type="submit">Sell!</button>
             </form>
+        </div>  
+        
+        <div>
 
             {submittedListings.map((listing, index) => (
-                <div key={index}>
+                <div className="new-form" key={index}>
                     <h3>New Listing:</h3>
                     <Container className="card" data-testid={`car-item-${index}`}>
                         <img src={listing.image || ''} alt={listing.type || ''} />
@@ -57,6 +61,7 @@ function NewCarForm() {
                 </div>
             ))}
         </div>
+      </div>  
     );
 }
 
