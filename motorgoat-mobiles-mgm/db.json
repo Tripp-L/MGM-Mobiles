@@ -35,6 +35,240 @@
         "model": "Charger SXT",
         "image": "https://img2.carmax.com/assets/25739574/hero.jpg?width=800&height=450",
         "price": "$21,000"
+      },
+      {
+        "id": "5",
+        "type": "Car",
+        "year": "2023",
+        "make": "Tesla",
+        "model": "Model 3",
+        "image": "https://img2.carmax.com/assets/25191400/hero.jpg?width=800&height=450",
+        "price": "$35,998"
+      },
+      {
+        "id": "6",
+        "type": "Truck",
+        "year": "2023",
+        "make": "Nissan",
+        "model": "Titan SV",
+        "image": "https://img2.carmax.com/assets/25538305/hero.jpg?width=400&height=300",
+        "price": "$40,998"
+      },
+      {
+        "id": "7",
+        "type": "Truck",
+        "year": "2022",
+        "make": "GMC",
+        "model": "Sierra 2500 SLE",
+        "image": "https://img2.carmax.com/assets/25689462/hero.jpg?width=400&height=300",
+        "price": "$51,998"
+      },
+      {
+        "id": "8",
+        "type": "SUV",
+        "year": "2021",
+        "make": "BMW",
+        "model": "X3 XDrive30i",
+        "image": "https://img2.carmax.com/assets/25927592/hero.jpg?width=400&height=300",
+        "price": "$34,998"
+      },
+      {
+        "id": "9",
+        "type": "SUV",
+        "year": "2020",
+        "make": "Mercedes-Benz",
+        "model": "GLE350",
+        "image": "https://img2.carmax.com/assets/25593227/hero.jpg?width=800&height=450",
+        "price": "$36,998"
+      },
+      {
+        "id": "10",
+        "type": "Car",
+        "year": "2023",
+        "make": "Jaguar",
+        "model": "F-Type R",
+        "image": "https://img2.carmax.com/assets/25620906/hero.jpg?width=800&height=450",
+        "price": "$90,998"
+      },
+      {
+        "id": "11",
+        "type": "Truck",
+        "year": "2021",
+        "make": "Toyota",
+        "model": "Tacoma SR5",
+        "image": "https://img2.carmax.com/assets/25739702/hero.jpg?width=800&height=450",
+        "price": "$37,998"
+      },
+      {
+        "id": "12",
+        "type": "SUV",
+        "year": "2022",
+        "make": "Lincoln",
+        "model": "Aviator Black Label Grand Touring",
+        "image": "https://img2.carmax.com/assets/25739109/hero.jpg?width=800&height=450",
+        "price": "$61,998"
+      },
+      {
+        "id": "13",
+        "type": "Car",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "14",
+        "type": "Truck",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "15",
+        "type": "SUV",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "16",
+        "type": "Car",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "17",
+        "type": "Truck",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "18",
+        "type": "SUV",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "19",
+        "type": "Car",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "20",
+        "type": "Truck",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "21",
+        "type": "SUV",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "22",
+        "type": "Car",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "23",
+        "type": "Truck",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "24",
+        "type": "SUV",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "25",
+        "type": "Car",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "26",
+        "type": "Truck",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "27",
+        "type": "SUV",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "28",
+        "type": "Car",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "29",
+        "type": "Truck",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
+      },
+      {
+        "id": "30",
+        "type": "SUV",
+        "year": "",
+        "make": "",
+        "model": "",
+        "image": "",
+        "price": ""
       }
     ]
   }

@@ -12,11 +12,13 @@ function Search({ setSearchTerm }) {
              type="text"
              id="search" 
              placeholder="Start typing to search..." 
-             onChange={handleInputChange} />
+             onChange={handleInputChange} 
+             className="search-input" />
         </div>
     );
 }
 
 export default Search;
+
 
 
