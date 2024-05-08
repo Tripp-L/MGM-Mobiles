@@ -111,65 +111,65 @@
       {
         "id": "13",
         "type": "Car",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2021",
+        "make": "Honda",
+        "model": "Civic Sport",
+        "image": "https://img2.carmax.com/assets/25875506/hero.jpg?width=800&height=450",
+        "price": "$23,998"
       },
       {
         "id": "14",
         "type": "Truck",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2022",
+        "make": "Ford",
+        "model": "F150 Lariat",
+        "image": "https://img2.carmax.com/assets/24711047/hero.jpg?width=800&height=450",
+        "price": "$40,998"
       },
       {
         "id": "15",
         "type": "SUV",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2022",
+        "make": "Acura",
+        "model": "MDX SH-AWD A-Spec",
+        "image": "https://img2.carmax.com/assets/25875482/hero.jpg?width=800&height=450",
+        "price": "$45,998"
       },
       {
         "id": "16",
         "type": "Car",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2019",
+        "make": "Dodge",
+        "model": "Charger GT",
+        "image": "https://img2.carmax.com/assets/25739312/hero.jpg?width=800&height=450",
+        "price": "$28,998"
       },
       {
         "id": "17",
         "type": "Truck",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2021",
+        "make": "Jeep",
+        "model": "Gladiator Sport",
+        "image": "https://img2.carmax.com/assets/25648785/hero.jpg?width=800&height=450",
+        "price": "$33,998"
       },
       {
         "id": "18",
         "type": "SUV",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2020",
+        "make": "Kia",
+        "model": "Sorento EX",
+        "image": "https://img2.carmax.com/assets/25292501/hero.jpg?width=800&height=450",
+        "price": "$23,998"
       },
       {
         "id": "19",
         "type": "Car",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2021",
+        "make": "BMW",
+        "model": "M440 I",
+        "image": "https://img2.carmax.com/assets/25396433/hero.jpg?width=800&height=450",
+        "price": "$49,998"
       },
       {
         "id": "20",
@@ -192,11 +192,11 @@
       {
         "id": "22",
         "type": "Car",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2020",
+        "make": "Ford",
+        "model": "Mustang GT Premium",
+        "image": "https://img2.carmax.com/assets/25651971/hero.jpg?width=800&height=450",
+        "price": "$37,998"
       },
       {
         "id": "23",
@@ -219,11 +219,11 @@
       {
         "id": "25",
         "type": "Car",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2023",
+        "make": "Chevrolet ",
+        "model": "Corvette Stingray 3LT",
+        "image": "https://img2.carmax.com/assets/25199747/hero.jpg?width=800&height=450",
+        "price": "$88,998"
       },
       {
         "id": "26",
@@ -246,11 +246,11 @@
       {
         "id": "28",
         "type": "Car",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2020",
+        "make": "Volkswagen",
+        "model": "Jetta S",
+        "image": "https://img2.carmax.com/assets/25875522/hero.jpg?width=800&height=450",
+        "price": "$17,998"
       },
       {
         "id": "29",
