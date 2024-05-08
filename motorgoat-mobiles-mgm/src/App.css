@@ -52,13 +52,10 @@ Header {
   color: #61dafb;
 }
 
-.heading#heading {
-/* backdrop-filter: blur(30px); */
-}
-
 .head-pic {
   width: 400px;
   height: 180px;
+  border-radius: 12px;
 }
 
 .navbar {
@@ -79,7 +76,6 @@ Header {
 .navrow {
   display: flex;
   justify-content: space-evenly;
-  /* mix-blend-mode: multiply; */
 }
 
 .nav-link {
@@ -114,6 +110,7 @@ Header {
   width: 150px;
   height: 100px;
   align-items: center;
+  border-radius: 10px;
 }
 
 .nav-text {
