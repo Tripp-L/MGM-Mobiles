@@ -7,9 +7,9 @@ import NewCarForm from "./NewCarForm";
 import Navbar from "./Navbar"; 
 
 function App() {
-    const [listings, setListings] = useState([])
-    const [searchTerm, setSearchTerm] = useState("")
-    const [newListings, setNewListings] = useState([])
+    const [listings, setListings] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
+    const [newListings, setNewListings] = useState([]);
 
     useEffect(() => {
         const storedListings = JSON.parse(localStorage.getItem("listings"))
@@ -78,7 +78,7 @@ function App() {
                     <Route path="/trucks" element={<CarList listings={filteredTruckListings} />} />
                     <Route path="/suv" element={<CarList listings={filteredSUVListings} />} />
                     <Route path="/new-car" element={<NewCarForm setListings={setNewListings} />} />
-                    <Route path="/" element={<CarPage />} />
+                    <Route path="/" element={<CarPage listings={filteredListings} />} />
                 </Routes>
             </div>
         </Router>
