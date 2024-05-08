@@ -40,6 +40,7 @@
 Header {
   background-image: url('https://www.co.wallowa.or.us/sites/g/files/vyhlif10466/files/media/home-page/image/71/road.jpg');
   background-size: cover;
+
 }
 
 .header {
@@ -58,6 +59,7 @@ backdrop-filter: blur(30px);
 .head-pic {
   width: 400px;
   height: 180px;
+  border-radius: 12px;
 }
 
 .navbar {
@@ -78,7 +80,6 @@ backdrop-filter: blur(30px);
 .navrow {
   display: flex;
   justify-content: space-evenly;
-  /* mix-blend-mode: multiply; */
 }
 
 .nav-link {
@@ -113,6 +114,7 @@ backdrop-filter: blur(30px);
   width: 150px;
   height: 100px;
   align-items: center;
+  border-radius: 10px;
 
 }
 
@@ -265,3 +267,28 @@ label {
   padding: 10px;
   text-align: center;
 }
+
+div.new-form {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #61dafb;
+  width: 280px; 
+  margin-right: 20px; 
+  margin-bottom: 20px; 
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  border-width: 0.5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: top; 
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
