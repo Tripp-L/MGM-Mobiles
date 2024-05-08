@@ -7,9 +7,10 @@ import NewCarForm from "./NewCarForm";
 import Navbar from "./Navbar"; 
 
 function App() {
-    const [listings, setListings] = useState([]);
-    const [searchTerm, setSearchTerm] = useState("");
-    const [newListings, setNewListings] = useState([]);
+    const [listings, setListings] = useState([])
+    const [searchTerm, setSearchTerm] = useState("")
+    const [newListings, setNewListings] = useState([])
+    const [searched, setSearched] = useState(false)
 
     useEffect(() => {
         const storedListings = JSON.parse(localStorage.getItem("listings"))
@@ -41,44 +42,22 @@ function App() {
 
     const allListings = [...listings, ...newListings]
 
-    const filteredListings = allListings.filter(item =>
-        item.make.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        item.model.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        item.price.includes(searchTerm)
-    )
-
-    const filteredCarListings = listings.filter(car =>
-        car.type === 'Car' &&
-        (car.make.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        car.model.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        car.price.includes(searchTerm))
-    )
-
-    const filteredTruckListings = listings.filter(truck =>
-        truck.type === 'Truck' &&
-        (truck.make.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        truck.model.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        truck.price.includes(searchTerm))
-    )
-
-    const filteredSUVListings = listings.filter(suv =>
-        suv.type === 'SUV' &&
-        (suv.make.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        suv.model.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        suv.price.includes(searchTerm))
-    )
+    const handleSearch = (searchTerm) => {
+        setSearchTerm(searchTerm)
+        setSearched(true)
+    }
 
     return (
         <Router>
             <div className="app">
-                <Header setSearchTerm={setSearchTerm} /> 
+                <Header setSearchTerm={handleSearch} /> 
                 <Navbar /> 
                 <Routes>
-                    <Route path="/cars" element={<CarList listings={filteredCarListings} />} />
-                    <Route path="/trucks" element={<CarList listings={filteredTruckListings} />} />
-                    <Route path="/suv" element={<CarList listings={filteredSUVListings} />} />
+                    <Route path="/cars" element={searched ? <CarList listings={allListings.filter(car => car.type === 'Car' && car.make.toLowerCase().includes(searchTerm.toLowerCase()))} /> : <CarList listings={listings.filter(car => car.type === 'Car')} />} />
+                    <Route path="/trucks" element={searched ? <CarList listings={allListings.filter(truck => truck.type === 'Truck' && truck.make.toLowerCase().includes(searchTerm.toLowerCase()))} /> : <CarList listings={listings.filter(truck => truck.type === 'Truck')} />} />
+                    <Route path="/suv" element={searched ? <CarList listings={allListings.filter(suv => suv.type === 'SUV' && suv.make.toLowerCase().includes(searchTerm.toLowerCase()))} /> : <CarList listings={listings.filter(suv => suv.type === 'SUV')} />} />
                     <Route path="/new-car" element={<NewCarForm setListings={setNewListings} />} />
-                    <Route path="/" element={<CarPage listings={filteredListings} />} />
+                    <Route path="/" element={searched ? <CarList listings={allListings.filter(item => item.make.toLowerCase().includes(searchTerm.toLowerCase()))} /> : <CarPage />} />
                 </Routes>
             </div>
         </Router>
@@ -86,6 +65,9 @@ function App() {
 }
 
 export default App;
+
+
+
 
 
 
