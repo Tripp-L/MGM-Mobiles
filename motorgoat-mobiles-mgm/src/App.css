@@ -63,36 +63,56 @@ Header {
 .navbar {
   background-color: transparent;
   font-size: 16px;
-  padding: 20px;
+  padding: 10px;
   font-family: Arial;
   text-align: center;
+  font-weight: lighter;
   color: White;
   border: #61dafb solid;
-  border-width: 5px;
-  border-radius: 10%;
+  border-width: 3px;
+  border-radius: 100px;
+  width: fit-content; 
+  margin: 0 auto;
 }
 
 .navrow {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   /* mix-blend-mode: multiply; */
 }
 
 .nav-link {
+  position: relative;
   color: #61dafb;
   text-decoration: none;
-  display: flex;
   align-items: center;
+  display: flex; 
+  padding: 10px; 
+  margin: 0 10px; 
+  transition: border-color 0.6s ease;
 }
 
 .nav-link:hover {
-  color: #42d449;
+  border-left: .5px solid #61dafb; 
+  border-top: .5px dashed #61dafb; 
+  border-bottom: none; 
+}
+
+.nav-link:hover::after {
+  content: '';
+  display: block;
+  width: 50px; 
+  height: 2px; 
+  background-color: #61dafb;
+  position: absolute;
+  bottom: -2px; 
+  left: 0; 
 }
 
 .nav-image {
   width: 150px;
   height: 100px;
-  margin-left: 10px; 
+  align-items: center;
 }
 
 .nav-text {
@@ -105,6 +125,138 @@ Header {
 
 .nav-image#sell {
   position: relative;
-  left: 35px;
+  left: 40px;
 }
 
+.new-car-form {
+  max-width: 400px; 
+  margin: 0 auto; 
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.card img {
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 80%; 
+  height: auto; 
+  object-fit: cover;
+}
+
+.card {
+  width: 10%; 
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.search-bar {
+  width: 20%;
+  position: relative;
+  left: 40%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.search-input {
+  width: 300px; 
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+}
+
+.listings-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; 
+  justify-content: center; 
+}
+
+.listing {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: #61dafb;
+  width: 280px; 
+  margin-right: 20px; 
+  margin-bottom: 20px; 
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  border-width: 0.5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: top; 
+  box-sizing: border-box;
+}
+
+.listing img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.listing p {
+  text-align: center;
+  margin-bottom: 8px; 
+}
+
+.listing h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
