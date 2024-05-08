@@ -10,13 +10,13 @@
 
 //   return (
 //     <Container className="card" data-testid={"car-item"} >
-//         <p>
+//         <div>
 //         {available ? (
 //           <button onClick={handleAvailableClick} className="primary">Available!</button>
 //       ) : (
 //           <button onClick={handleAvailableClick} className="secondary">Sold!</button> 
 //       )}
-//         </p>
+//         </div>
 //         <img src={image} alt={type} />
 //         <p>{year} {make}</p>
 //         <p>{model}</p>
