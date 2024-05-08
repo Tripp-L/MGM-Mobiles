@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Search from "./Search";
 
 function Header({ setSearchTerm }) {
-    const location = useLocation();
+    const location = useLocation()
 
     return (
         <header className="header">
