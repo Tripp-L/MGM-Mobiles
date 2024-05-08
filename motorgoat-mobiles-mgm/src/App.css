@@ -52,6 +52,10 @@ Header {
   color: #61dafb;
 }
 
+/* .heading#heading {
+backdrop-filter: blur(30px);
+} */
+
 .head-pic {
   width: 400px;
   height: 180px;
@@ -91,7 +95,7 @@ Header {
 
 .nav-link:hover {
   border-left: .5px solid #61dafb; 
-  border-top: .5px dashed #61dafb; 
+  border-top: none; 
   border-bottom: none; 
 }
 
@@ -111,6 +115,7 @@ Header {
   height: 100px;
   align-items: center;
   border-radius: 10px;
+
 }
 
 .nav-text {
@@ -127,7 +132,7 @@ Header {
 }
 
 .new-car-form {
-  max-width: 400px; 
+  max-width: 600px; 
   margin: 0 auto; 
   padding: 20px;
   border: 2px solid #ccc;
@@ -163,19 +168,17 @@ button[type="submit"]:hover {
 }
 
 .card img {
-  border: 1px solid #ccc; 
-  border-radius: 5px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  margin-bottom: 10px;
-  width: 80%; 
-  height: auto; 
+  width: 80%;
+  border-radius: 8px;
   object-fit: cover;
+  
 }
 
 .card {
-  width: 10%; 
-  height: auto; 
+  width: 80%; 
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
   display: flex;
   flex-direction: column;
   align-items: center; 
@@ -185,6 +188,7 @@ button[type="submit"]:hover {
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  margin-bottom: 10px;
 }
 
 .search-bar {
@@ -258,3 +262,33 @@ label {
   margin-bottom: 10px;
   text-align: center;
 }
+
+.card-content {
+  padding: 10px;
+  text-align: center;
+}
+
+div.new-form {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #61dafb;
+  width: 280px; 
+  margin-right: 20px; 
+  margin-bottom: 20px; 
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  border-width: 0.5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: top; 
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+

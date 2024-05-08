@@ -7,9 +7,9 @@ import NewCarForm from "./NewCarForm";
 import Navbar from "./Navbar"; 
 
 function App() {
-    const [listings, setListings] = useState([])
-    const [searchTerm, setSearchTerm] = useState("")
-    const [newListings, setNewListings] = useState([])
+    const [listings, setListings] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
+    const [newListings, setNewListings] = useState([]);
 
     useEffect(() => {
         const storedListings = JSON.parse(localStorage.getItem("listings"))
@@ -39,20 +39,33 @@ function App() {
         localStorage.setItem("newListings", JSON.stringify(newListings))
     }, [newListings])
 
-    const filteredListings = listings.filter(car =>
-        car.type.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        car.year.includes(searchTerm) ||
-        car.make.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        car.model.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        car.price.includes(searchTerm)
+    const allListings = [...listings, ...newListings]
+
+    const filteredListings = allListings.filter(item =>
+        item.make.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        item.model.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        item.price.includes(searchTerm)
     )
 
-    const filteredNewListings = newListings.filter(car =>
-        car.type.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        car.year.includes(searchTerm) ||
-        car.make.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    const filteredCarListings = listings.filter(car =>
+        car.type === 'Car' &&
+        (car.make.toLowerCase().includes(searchTerm.toLowerCase()) ||
         car.model.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        car.price.includes(searchTerm)
+        car.price.includes(searchTerm))
+    )
+
+    const filteredTruckListings = listings.filter(truck =>
+        truck.type === 'Truck' &&
+        (truck.make.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        truck.model.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        truck.price.includes(searchTerm))
+    )
+
+    const filteredSUVListings = listings.filter(suv =>
+        suv.type === 'SUV' &&
+        (suv.make.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        suv.model.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        suv.price.includes(searchTerm))
     )
 
     return (
@@ -60,14 +73,12 @@ function App() {
             <div className="app">
                 <Header setSearchTerm={setSearchTerm} /> 
                 <Navbar /> 
-                {searchTerm !== "" && <CarList listings={filteredListings} />}
-                {searchTerm !== "" && <CarList listings={filteredNewListings} />}
                 <Routes>
-                    <Route path="/cars" element={<CarList listings={filteredListings.filter(car => car.type === 'Car')} />} />
-                    <Route path="/trucks" element={<CarList listings={filteredListings.filter(car => car.type === 'Truck')} />} />
-                    <Route path="/suv" element={<CarList listings={filteredListings.filter(car => car.type === 'SUV')} />} />
+                    <Route path="/cars" element={<CarList listings={filteredCarListings} />} />
+                    <Route path="/trucks" element={<CarList listings={filteredTruckListings} />} />
+                    <Route path="/suv" element={<CarList listings={filteredSUVListings} />} />
                     <Route path="/new-car" element={<NewCarForm setListings={setNewListings} />} />
-                    <Route path="/" element={<CarPage />} />
+                    <Route path="/" element={<CarPage listings={filteredListings} />} />
                 </Routes>
             </div>
         </Router>
@@ -75,6 +86,9 @@ function App() {
 }
 
 export default App;
+
+
+
 
 
 

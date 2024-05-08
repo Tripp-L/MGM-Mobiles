@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Container from 'react-bootstrap/Container';
+import "../App.css";
 
-function NewCarForm({ setListings }) {
-    const [newListing, setNewListing] = useState(null)
+function NewCarForm() {
     const [inputValues, setInputValues] = useState({})
-    
+    const [submittedListings, setSubmittedListings] = useState([])
+
     useEffect(() => {
-        const storedListing = JSON.parse(localStorage.getItem("newListing"))
-        if (storedListing) {
-            setNewListing(storedListing)
+        const storedListings = JSON.parse(localStorage.getItem("submittedListings"))
+        if (storedListings) {
+            setSubmittedListings(storedListings)
         }
     }, [])
 
@@ -25,19 +26,14 @@ function NewCarForm({ setListings }) {
             return
         }
 
-        const submittedListing = { ...inputValues }
-        setListings((prevListings) => [submittedListing, ...prevListings])
-        setNewListing(submittedListing)
-        localStorage.setItem("newListing", JSON.stringify(submittedListing))
+        const newListing = { ...inputValues }
+        setSubmittedListings((prevListings) => [...prevListings, newListing])
+        localStorage.setItem("submittedListings", JSON.stringify([...submittedListings, newListing]))
         setInputValues({})
     }
 
-    function handleDelete() {
-        setNewListing(null)
-        localStorage.removeItem("newListing")
-    }
-
     return (
+      <div> 
         <div className="new-car-form">
             <form onSubmit={handleSubmit}>
                 <h2>💲 Sell Your Car Here! 💲</h2>
@@ -49,23 +45,28 @@ function NewCarForm({ setListings }) {
                 <input type="text" name="price" placeholder="Price" value={inputValues.price || ''} onChange={handleInputChange} />
                 <button type="submit">Sell!</button>
             </form>
-            {newListing && (
-                <div>
+        </div>  
+        
+        <div>
+
+            {submittedListings.map((listing, index) => (
+                <div className="new-form" key={index}>
                     <h3>New Listing:</h3>
-                    <Container className="card" data-testid={"car-item"} >
-                        <img src={newListing.image || ''} alt={newListing.type || ''} />
-                        <p>{newListing.year || ''} {newListing.make || ''}</p>
-                        <p>{newListing.model || ''}</p>
-                        <p>Price: {newListing.price || ''}</p>
-                        <button onClick={handleDelete}>Delete</button>
+                    <Container className="card" data-testid={`car-item-${index}`}>
+                        <img src={listing.image || ''} alt={listing.type || ''} />
+                        <p>{listing.year || ''} {listing.make || ''}</p>
+                        <p>{listing.model || ''}</p>
+                        <p>Price: {listing.price || ''}</p>
                     </Container>
                 </div>
-            )}
+            ))}
         </div>
+      </div>  
     );
 }
 
 export default NewCarForm;
+
 
 
 
