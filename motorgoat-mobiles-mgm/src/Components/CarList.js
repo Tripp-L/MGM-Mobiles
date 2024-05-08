@@ -1,18 +1,18 @@
 import React from "react";
-import CarCard from "./CarCard";
 
 function CarList({ listings }) {
-    return (
-        <div className="car-list">
-            {listings ? (
-                listings.map(car => (
-                    <CarCard key={car.id} {...car} />
-                ))
-            ) : (
-                <p></p>
-            )}
+  return (
+    <div className="listings-container">
+      {listings && Array.isArray(listings) && listings.map((listing, index) => (
+        <div className="listing" key={index}>
+          <img src={listing.image} alt={listing.type} />
+          <p>{listing.year} {listing.make}</p>
+          <p>{listing.model}</p>
+          <p>Price: {listing.price}</p>
         </div>
-    );
+      ))}
+    </div>
+  );
 }
 
 export default CarList;
