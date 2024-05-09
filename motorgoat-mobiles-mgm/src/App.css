@@ -40,7 +40,7 @@
 Header {
   background-image: url('https://www.co.wallowa.or.us/sites/g/files/vyhlif10466/files/media/home-page/image/71/road.jpg');
   background-size: cover;
-
+  box-shadow: 0 10px 50px #61dafb;
 }
 
 .header {
@@ -61,6 +61,7 @@ backdrop-filter: blur(30px);
   width: 400px;
   height: 180px;
   border-radius: 12px;
+  box-shadow: 0 20px 80px black;
 }
 
 .navbar {
@@ -76,6 +77,7 @@ backdrop-filter: blur(30px);
   border-radius: 100px;
   width: fit-content; 
   margin: 0 auto;
+  box-shadow: 0 10px 50px #61dafb;
 }
 
 .navrow {
@@ -116,7 +118,7 @@ backdrop-filter: blur(30px);
   height: 100px;
   align-items: center;
   border-radius: 10px;
-
+  box-shadow: 0 20px 20px #61dafb;
 }
 
 .nav-text {
@@ -133,13 +135,30 @@ backdrop-filter: blur(30px);
 }
 
 .new-car-form {
-  max-width: 600px; 
-  margin: 0 auto; 
+  max-width: 550px; 
+  margin: 0 auto;
+  margin-top: 30px;
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 50px #61dafb;
   background-color: #f9f9f9;
+  font-family: "Sedgwick Ave Display";
+  text-decoration: underline;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  color: #61dafb;
+  text-shadow: -2px -2px 0 #000, -2px -2px #000;
+}
+.new-listings-heading {
+  font-family: "Sedgwick Ave Display";
+  text-decoration: underline;
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  color: #61dafb;
+  text-shadow: -2px -2px 0 #000, -2px -2px #000;
 }
 
 .form-group {
@@ -153,10 +172,11 @@ input[type="text"] {
   border-radius: 5px;
   box-sizing: border-box;
   margin-bottom: 10px;
+  box-shadow: 0 5px 7px #61dafb;
 }
 
 button[type="submit"] {
-  background-color: #007bff;
+  background-color: #129fc6;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -165,31 +185,26 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-.card img {
-  width: 80%;
-  border-radius: 8px;
-  object-fit: cover;
-  
+  background-color: #14c4f5;
 }
 
 .card {
-  width: 80%; 
-  height: auto;
-  max-height: 200px;
-  object-fit: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  padding: 10px;
-  margin: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #61dafb;
+  width: 280px; 
+  margin-right: 20px; 
+  margin-bottom: 20px; 
+  padding: 20px;
   border-radius: 10px;
   border: 1px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  margin-bottom: 10px;
+  border-width: 0.5px;
+  box-shadow: 0 4px 8px ;
+  background-color: #fff; 
+  display: inline-block;
+  vertical-align: top; 
+  box-sizing: border-box;
 }
 
 .search-bar {
@@ -253,8 +268,8 @@ label {
   border-radius: 10px;
   border: 1px solid #ddd;
   border-width: 0.5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  box-shadow: 0 4px 8px ;
+  background-color: #fff; 
   display: inline-block;
   vertical-align: top; 
   box-sizing: border-box;
@@ -282,31 +297,17 @@ label {
 .card-content {
   padding: 10px;
   text-align: center;
+  box-shadow: 0 4px 8px #61dafb;
 }
 
-.new-form {
-  font-family: Arial, sans-serif;
-  font-size: 20px;
-  text-align: center;
-  color: #61dafb;
-  width: 280px; 
-  margin-right: 20px; 
-  margin-bottom: 20px; 
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  border-width: 0.5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  display: inline-block;
-  vertical-align: top; 
-}
 
 .new-form img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
   object-fit: cover;
 }
+
 
 .search-label#label {
   text-shadow: -2px -2px 0 #000, -2px -2px #000;
@@ -323,3 +324,14 @@ label {
   background-color: red;
   border-color: black;
 }
+
+.listing-details button {
+  margin-right: 1000px;
+}
+
+
+
+
+
+
+
