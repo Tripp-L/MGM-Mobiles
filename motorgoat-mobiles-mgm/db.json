@@ -218,7 +218,7 @@
         "model": "Mustang GT Premium",
         "image": "https://img2.carmax.com/assets/25651971/hero.jpg?width=800&height=450",
         "price": "$37,998",
-        "mileage": ""
+        "mileage": "20,000"
       },
       {
         "id": "23",
@@ -278,7 +278,7 @@
         "model": "Jetta S",
         "image": "https://img2.carmax.com/assets/25875522/hero.jpg?width=800&height=450",
         "price": "$17,998",
-        "mileage": ""
+        "mileage": "22,343"
       },
       {
         "id": "29",

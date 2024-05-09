@@ -35,6 +35,7 @@ function ListingItem({ listing }) {
       <img src={listing.image} alt={listing.type} />
       <p>{listing.year} {listing.make}</p>
       <p>{listing.model}</p>
+      <p>Miles: {listing.mileage}</p>
       <p>Price: {listing.price}</p>
     </div>
   );
