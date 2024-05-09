@@ -214,8 +214,23 @@ label {
   font-size: 16px;
 }
 
+.search-input:focus {
+  border-color: #66afe9;
+}
+
 .search-bar input[type="text"] {
   width: 100%;
+  padding: 8px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+
+.search-input::placeholder {
+  color: #000; 
+  opacity: 1; 
 }
 
 .listings-container {
@@ -269,7 +284,7 @@ label {
   text-align: center;
 }
 
-div.new-form {
+.new-form {
   font-family: Arial, sans-serif;
   font-size: 20px;
   text-align: center;
@@ -287,7 +302,7 @@ div.new-form {
   vertical-align: top; 
 }
 
-.card img {
+.new-form img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -300,9 +315,11 @@ div.new-form {
 .primary {
   color: black;
   background-color: green;
+  border-color: black;
 }
 
 .secondary {
   color: black;
   background-color: red;
+  border-color: black;
 }
