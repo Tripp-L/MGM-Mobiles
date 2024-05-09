@@ -11,7 +11,21 @@
     text-align: center;
 }
 
+.social-img {
+    border-radius: 15%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
 .col-3 {
     text-decoration: underline;
     text-align: center;
+    background: black;
+}
+
+.footer {
+    line-height: 3px;
+    background: black;
+    color: #61dafb;
+    height: 200px;
 }
