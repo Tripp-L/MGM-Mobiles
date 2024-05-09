@@ -6,7 +6,7 @@ import "../Footer.css"
 function Footer() {
 
     return (
-        <footer>
+        <footer className="foot">
             <Container>
                 <Row className="footer">
                     <Col className="col-1">
@@ -28,28 +28,28 @@ function Footer() {
                         <Stack>
                             <p>Follow us</p>
                             <Image 
-                            className="facebook"
+                            className="social-img"
                             src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338507_1280.png"
                             alt="fb-logo"
                             width={25}
                             height={25}
                             />
                             <Image 
-                            className="instagram"
+                            className="social-img"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
                             alt="insta-logo"
                             width={25}
                             height={25}
                             />
                             <Image
-                            className="tiktok"
+                            className="social-img"
                             src="https://cdn.pixabay.com/photo/2022/02/09/08/24/tiktok-7002866_1280.png"
                             alt="tik-logo"
                             width={25}
                             height={25}
                             />
                             <Image
-                            className="twitter"
+                            className="social-img"
                             src="https://upload.wikimedia.org/wikipedia/commons/9/95/Twitter_new_X_logo.png"
                             alt="x-logo"
                             width={25}
@@ -59,7 +59,7 @@ function Footer() {
                     </Col>
                     <Col className="col-3">
                        <Stack>
-                        <p>Copyright &copy;2024 MotorGOAT Mobiles, Inc. All rights reserved</p>
+                        <p className="copy">Copyright &copy;2024 MotorGOAT Mobiles, Inc. All rights reserved</p>
                        </Stack>
                     </Col>
                 </Row>
