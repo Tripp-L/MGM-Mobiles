@@ -5,6 +5,7 @@ import CarPage from "./CarPage";
 import CarList from "./CarList"; 
 import NewCarForm from "./NewCarForm";
 import Navbar from "./Navbar"; 
+import Footer from "./Footer";
 
 function App() {
     const [listings, setListings] = useState([])
@@ -59,6 +60,7 @@ function App() {
                     <Route path="/new-car" element={<NewCarForm setListings={setNewListings} />} />
                     <Route path="/" element={<CarPage />} />
                 </Routes>
+                <Footer />
             </div>
         </Router>
     );
