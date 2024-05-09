@@ -49,7 +49,7 @@ function NewCarForm() {
         <div>
             <div className="new-car-form">
                 <form onSubmit={handleSubmit}>
-                    <h2>💲 Sell Your Car Here! 💲</h2>
+                    <h2 className="sell-heading">💲 Sell Your Car Here! 💲</h2>
                     <input type="text" name="type" placeholder="Type" value={inputValues.type || ''} onChange={handleInputChange} />
                     <input type="text" name="year" placeholder="Year" value={inputValues.year || ''} onChange={handleInputChange} />
                     <input type="text" name="make" placeholder="Make" value={inputValues.make || ''} onChange={handleInputChange} />
@@ -60,18 +60,20 @@ function NewCarForm() {
                 </form>
             </div>
 
-            <div>
+            <div className="new-listings">
+                <h3 className="new-listings-heading">New Listings</h3>
                 {submittedListings.map((listing) => (
                     <div className="new-form" key={listing.id}>
-                        <h3>New Listing:</h3>
                         <Container className="card">
-                            <img src={listing.image || ''} alt={listing.type || ''} />
-                            <p>{listing.year || ''} {listing.make || ''}</p>
-                            <p>{listing.model || ''}</p>
-                            <p>Price: {listing.price || ''}</p>
-                            <button onClick={() => handleAvailabilityClick(listing.id)} className={availability[listing.id] ? "primary" : "secondary"}>
-                                {availability[listing.id] ? "Available!" : "Sold!"}
-                            </button>
+                            <div className="listing-details">
+                                <button onClick={() => handleAvailabilityClick(listing.id)} className={availability[listing.id] ? "primary" : "secondary"}>
+                                    {availability[listing.id] ? "Available!" : "Sold!"}
+                                </button>
+                                <img src={listing.image || ''} alt={listing.type || ''} />
+                                <p>{listing.year || ''} {listing.make || ''}</p>
+                                <p>{listing.model || ''}</p>
+                                <p>Price: {listing.price || ''}</p>
+                            </div>
                         </Container>
                     </div>
                 ))}
@@ -81,6 +83,10 @@ function NewCarForm() {
 }
 
 export default NewCarForm;
+
+
+
+
 
 
 

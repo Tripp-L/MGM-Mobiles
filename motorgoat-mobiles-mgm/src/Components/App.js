@@ -41,12 +41,12 @@ function App() {
         localStorage.setItem("newListings", JSON.stringify(newListings))
     }, [newListings])
 
-    const allListings = [...listings, ...newListings]
-
     const handleSearch = (searchTerm) => {
-        setSearchTerm(searchTerm)
+        setSearchTerm(searchTerm.toLowerCase())
         setSearched(true)
     }
+
+    const allListings = [...listings, ...newListings]
 
     return (
         <Router>
@@ -54,11 +54,34 @@ function App() {
                 <Header setSearchTerm={handleSearch} /> 
                 <Navbar /> 
                 <Routes>
-                    <Route path="/cars" element={<CarList listings={searched ? allListings.filter(car => car.type === 'Car' && car.make.toLowerCase().includes(searchTerm.toLowerCase())) : listings.filter(car => car.type === 'Car')} />} />
-                    <Route path="/trucks" element={<CarList listings={searched ? allListings.filter(truck => truck.type === 'Truck' && truck.make.toLowerCase().includes(searchTerm.toLowerCase())) : listings.filter(truck => truck.type === 'Truck')} />} />
-                    <Route path="/suv" element={<CarList listings={searched ? allListings.filter(suv => suv.type === 'SUV' && suv.make.toLowerCase().includes(searchTerm.toLowerCase())) : listings.filter(suv => suv.type === 'SUV')} />} />
+                    <Route path="/cars" element={<CarList listings={searched ? allListings.filter(car => 
+                        car.type.toLowerCase() === 'car' &&
+                        (car.year.includes(searchTerm) ||
+                        car.make.toLowerCase().includes(searchTerm) ||
+                        car.model.toLowerCase().includes(searchTerm) ||
+                        car.price.toString().includes(searchTerm))
+                    ) : listings.filter(car => car.type.toLowerCase() === 'car')} />} />
+                    <Route path="/trucks" element={<CarList listings={searched ? allListings.filter(truck => 
+                        truck.type.toLowerCase() === 'truck' &&
+                        (truck.year.includes(searchTerm) ||
+                        truck.make.toLowerCase().includes(searchTerm) ||
+                        truck.model.toLowerCase().includes(searchTerm) ||
+                        truck.price.toString().includes(searchTerm))
+                    ) : listings.filter(truck => truck.type.toLowerCase() === 'truck')} />} />
+                    <Route path="/suv" element={<CarList listings={searched ? allListings.filter(suv => 
+                        suv.type.toLowerCase() === 'suv' &&
+                        (suv.year.includes(searchTerm) ||
+                        suv.make.toLowerCase().includes(searchTerm) ||
+                        suv.model.toLowerCase().includes(searchTerm) ||
+                        suv.price.toString().includes(searchTerm))
+                    ) : listings.filter(suv => suv.type.toLowerCase() === 'suv')} />} />
                     <Route path="/new-car" element={<NewCarForm setListings={setNewListings} />} />
-                    <Route path="/" element={<CarPage />} />
+                    <Route path="/" element={<CarList listings={searched && searchTerm !== '' ? allListings.filter(listing => 
+                        (listing.year.includes(searchTerm) ||
+                        listing.make.toLowerCase().includes(searchTerm) ||
+                        listing.model.toLowerCase().includes(searchTerm) ||
+                        listing.price.toString().includes(searchTerm))
+                    ) : []} />} />
                 </Routes>
                 <Footer />
             </div>
@@ -67,6 +90,8 @@ function App() {
 }
 
 export default App;
+
+
 
 
 
