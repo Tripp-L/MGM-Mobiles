@@ -7,7 +7,8 @@
         "make": "Chevrolet",
         "model": "Silverado 1500 LTD LT",
         "image": "https://img2.carmax.com/assets/25718556/hero.jpg?width=400&height=300",
-        "price": "$35,000"
+        "price": "$35,000",
+        "mileage": "40,000"
       },
       {
         "id": 2,
@@ -16,7 +17,8 @@
         "make": "Ford",
         "model": "Fusion Hybrid SE",
         "image": "https://img2.carmax.com/assets/25817095/hero.jpg?width=400&height=300",
-        "price": "$21,000"
+        "price": "$21,000",
+        "mileage": "62,000"
       },
       {
         "id": 3,
@@ -25,7 +27,8 @@
         "make": "Toyota",
         "model": "4Runner TRD Sport",
         "image": "https://img2.carmax.com/assets/25739512/hero.jpg?width=400&height=300",
-        "price": "$43,998"
+        "price": "$43,998",
+        "mileage": "20,000"
       },
       {
         "id": 4,
@@ -34,7 +37,8 @@
         "make": "Dodge",
         "model": "Charger SXT",
         "image": "https://img2.carmax.com/assets/25739574/hero.jpg?width=800&height=450",
-        "price": "$21,000"
+        "price": "$21,000",
+        "mileage": "10,000"
       },
       {
         "id": "5",
@@ -43,7 +47,8 @@
         "make": "Tesla",
         "model": "Model 3",
         "image": "https://img2.carmax.com/assets/25191400/hero.jpg?width=800&height=450",
-        "price": "$35,998"
+        "price": "$35,998",
+        "mileage": "11,123"
       },
       {
         "id": "6",
@@ -52,7 +57,8 @@
         "make": "Nissan",
         "model": "Titan SV",
         "image": "https://img2.carmax.com/assets/25538305/hero.jpg?width=400&height=300",
-        "price": "$40,998"
+        "price": "$40,998",
+        "mileage": "5,000"
       },
       {
         "id": "7",
@@ -61,7 +67,8 @@
         "make": "GMC",
         "model": "Sierra 2500 SLE",
         "image": "https://img2.carmax.com/assets/25689462/hero.jpg?width=400&height=300",
-        "price": "$51,998"
+        "price": "$51,998",
+        "mileage": "12,000"
       },
       {
         "id": "8",
@@ -70,7 +77,8 @@
         "make": "BMW",
         "model": "X3 XDrive30i",
         "image": "https://img2.carmax.com/assets/25927592/hero.jpg?width=400&height=300",
-        "price": "$34,998"
+        "price": "$34,998",
+        "mileage": "30,000"
       },
       {
         "id": "9",
@@ -79,7 +87,8 @@
         "make": "Mercedes-Benz",
         "model": "GLE350",
         "image": "https://img2.carmax.com/assets/25593227/hero.jpg?width=800&height=450",
-        "price": "$36,998"
+        "price": "$36,998",
+        "mileage": "12,123"
       },
       {
         "id": "10",
@@ -88,7 +97,8 @@
         "make": "Jaguar",
         "model": "F-Type R",
         "image": "https://img2.carmax.com/assets/25620906/hero.jpg?width=800&height=450",
-        "price": "$90,998"
+        "price": "$90,998",
+        "mileage": "32,323"
       },
       {
         "id": "11",
@@ -97,7 +107,8 @@
         "make": "Toyota",
         "model": "Tacoma SR5",
         "image": "https://img2.carmax.com/assets/25739702/hero.jpg?width=800&height=450",
-        "price": "$37,998"
+        "price": "$37,998",
+        "mileage": "12,223"
       },
       {
         "id": "12",
@@ -106,7 +117,8 @@
         "make": "Lincoln",
         "model": "Aviator Black Label Grand Touring",
         "image": "https://img2.carmax.com/assets/25739109/hero.jpg?width=800&height=450",
-        "price": "$61,998"
+        "price": "$61,998",
+        "mileage": "15,000"
       },
       {
         "id": "13",
@@ -115,7 +127,8 @@
         "make": "Honda",
         "model": "Civic Sport",
         "image": "https://img2.carmax.com/assets/25875506/hero.jpg?width=800&height=450",
-        "price": "$23,998"
+        "price": "$23,998",
+        "mileage": "10,000"
       },
       {
         "id": "14",
@@ -124,7 +137,8 @@
         "make": "Ford",
         "model": "F150 Lariat",
         "image": "https://img2.carmax.com/assets/24711047/hero.jpg?width=800&height=450",
-        "price": "$40,998"
+        "price": "$40,998",
+        "mileage": "42,000"
       },
       {
         "id": "15",
@@ -133,7 +147,8 @@
         "make": "Acura",
         "model": "MDX SH-AWD A-Spec",
         "image": "https://img2.carmax.com/assets/25875482/hero.jpg?width=800&height=450",
-        "price": "$45,998"
+        "price": "$45,998",
+        "mileage": "32,000"
       },
       {
         "id": "16",
@@ -142,7 +157,8 @@
         "make": "Dodge",
         "model": "Charger GT",
         "image": "https://img2.carmax.com/assets/25739312/hero.jpg?width=800&height=450",
-        "price": "$28,998"
+        "price": "$28,998",
+        "mileage": "30,000"
       },
       {
         "id": "17",
@@ -151,7 +167,8 @@
         "make": "Jeep",
         "model": "Gladiator Sport",
         "image": "https://img2.carmax.com/assets/25648785/hero.jpg?width=800&height=450",
-        "price": "$33,998"
+        "price": "$33,998",
+        "mileage": "20,000"
       },
       {
         "id": "18",
@@ -160,7 +177,8 @@
         "make": "Kia",
         "model": "Sorento EX",
         "image": "https://img2.carmax.com/assets/25292501/hero.jpg?width=800&height=450",
-        "price": "$23,998"
+        "price": "$23,998",
+        "mileage": "15,000"
       },
       {
         "id": "19",
@@ -169,25 +187,28 @@
         "make": "BMW",
         "model": "M440 I",
         "image": "https://img2.carmax.com/assets/25396433/hero.jpg?width=800&height=450",
-        "price": "$49,998"
+        "price": "$49,998",
+        "mileage": "50,000"
       },
       {
         "id": "20",
         "type": "Truck",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2022",
+        "make": "GMC",
+        "model": "Sierra",
+        "image": "https://img2.carmax.com/assets/25554324/hero.jpg?width=400&height=300",
+        "price": "$40,998",
+        "mileage": "21,000"
       },
       {
         "id": "21",
         "type": "SUV",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2013",
+        "make": "Jeep",
+        "model": "Patriot",
+        "image": "https://img2.carmax.com/assets/25681801/hero.jpg?width=400&height=300",
+        "price": "$13,998",
+        "mileage": "78,000"
       },
       {
         "id": "22",
@@ -196,25 +217,28 @@
         "make": "Ford",
         "model": "Mustang GT Premium",
         "image": "https://img2.carmax.com/assets/25651971/hero.jpg?width=800&height=450",
-        "price": "$37,998"
+        "price": "$37,998",
+        "mileage": ""
       },
       {
         "id": "23",
         "type": "Truck",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2023",
+        "make": "Jeep",
+        "model": "Gladiator Sport",
+        "image": "https://img2.carmax.com/assets/25554281/hero.jpg?width=400&height=300",
+        "price": "$35,998",
+        "mileage": "9,000"
       },
       {
         "id": "24",
         "type": "SUV",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2018",
+        "make": "Toyota",
+        "model": "$Runner",
+        "image": "https://img2.carmax.com/assets/25868635/hero.jpg?width=400&height=300",
+        "price": "$24,998",
+        "mileage": "123,000"
       },
       {
         "id": "25",
@@ -223,25 +247,28 @@
         "make": "Chevrolet ",
         "model": "Corvette Stingray 3LT",
         "image": "https://img2.carmax.com/assets/25199747/hero.jpg?width=800&height=450",
-        "price": "$88,998"
+        "price": "$88,998",
+        "mileage": "10,000"
       },
       {
         "id": "26",
         "type": "Truck",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2023",
+        "make": "Toyota",
+        "model": "Tundra",
+        "image": "https://img2.carmax.com/assets/25554340/hero.jpg?width=400&height=300",
+        "price": "$52,998",
+        "mileage": "3,000"
       },
       {
         "id": "27",
         "type": "SUV",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2020",
+        "make": "Lexus",
+        "model": "NX 300",
+        "image": "https://img2.carmax.com/assets/25682424/hero.jpg?width=400&height=300",
+        "price": "$28,998",
+        "mileage": "28,000"
       },
       {
         "id": "28",
@@ -250,25 +277,128 @@
         "make": "Volkswagen",
         "model": "Jetta S",
         "image": "https://img2.carmax.com/assets/25875522/hero.jpg?width=800&height=450",
-        "price": "$17,998"
+        "price": "$17,998",
+        "mileage": ""
       },
       {
         "id": "29",
         "type": "Truck",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2020",
+        "make": "Ford",
+        "model": "F150",
+        "image": "https://img2.carmax.com/assets/25681598/hero.jpg?width=400&height=300",
+        "price": "$36,998",
+        "mileage": "34,000"
       },
       {
         "id": "30",
         "type": "SUV",
-        "year": "",
-        "make": "",
-        "model": "",
-        "image": "",
-        "price": ""
+        "year": "2013",
+        "make": "Ford",
+        "model": "Edge",
+        "image": "https://img2.carmax.com/assets/25554959/hero.jpg?width=400&height=300",
+        "price": "$14,599",
+        "mileage": "92,000"
+      },
+      {
+        "id": "31",
+        "type": "Car",
+        "year": "2022",
+        "make": "Lamborghini",
+        "model": "Huracan STO",
+        "image": "https://d2blhp03rkvfi4.cloudfront.net/cache/width_480/car/car-262299/photo/2022-lamborghini-huracan--sto-0-2089864910.webp",
+        "price": "$180,000",
+        "mileage": "1,820"
+      },
+      {
+        "id": "32",
+        "type": "Car",
+        "year": "2023",
+        "make": "Lamborghini",
+        "model": "Huracan Sterrato",
+        "image": "https://d2blhp03rkvfi4.cloudfront.net/cache/width_480/car/car-318335/photo/2023-lamborghini-huracan--sterrato-369995-2033599976.webp",
+        "price": "$369,995",
+        "mileage": "936"
+      },
+      {
+        "id": "33",
+        "type": "SUV",
+        "year": "2021",
+        "make": "Cadillac",
+        "model": "Escalade",
+        "image": "https://img2.carmax.com/assets/25745609/hero.jpg?width=400&height=300",
+        "price": "$83,998",
+        "mileage": "33,000"
+      },
+      {
+        "id": "34",
+        "type": "SUV",
+        "year": "2018",
+        "make": "Cadillac",
+        "model": "Escalade",
+        "image": "https://img2.carmax.com/assets/25801114/hero.jpg?width=400&height=300",
+        "price": "$47,998",
+        "mileage": "52,000"
+      },
+      {
+        "id": "35",
+        "type": "Truck",
+        "year": "2019",
+        "make": "Ford",
+        "model": "Ranger",
+        "image": "https://img2.carmax.com/assets/25831040/hero.jpg?width=400&height=300",
+        "price": "$29,998",
+        "mileage": "39,000"
+      },
+      {
+        "id": "36",
+        "type": "Truck",
+        "year": "2021",
+        "make": "Jeep",
+        "model": "Gladiator Rubicon",
+        "image": "https://img2.carmax.com/assets/25554485/hero.jpg?width=400&height=300",
+        "price": "$40,998",
+        "mileage": "18,000"
+      },
+      {
+        "id": "37",
+        "type": "Car",
+        "year": "2014",
+        "make": "Hyundai",
+        "model": "Accent",
+        "image": "https://img2.carmax.com/assets/25553916/hero.jpg?width=400&height=300",
+        "price": "$12,998",
+        "mileage": "73,000"
+      },
+      {
+        "id": "38",
+        "type": "SUV",
+        "year": "2021",
+        "make": "Nissan",
+        "model": "Rogue",
+        "image": "https://img2.carmax.com/assets/25801102/hero.jpg?width=400&height=300",
+        "price": "$24,998",
+        "mileage": "20,000"
+      },
+      {
+        "id": "39",
+        "type": "Car",
+        "year": "2021",
+        "make": "Chevrolet",
+        "model": "Corvette Stingray",
+        "image": "https://img2.carmax.com/assets/25681926/hero.jpg?width=400&height=300",
+        "price": "$71,998",
+        "mileage": "11,000"
+      },
+      {
+        "id": "40",
+        "type": "Car",
+        "year": "2019",
+        "make": "Chevrolet",
+        "model": "Corvette Grand Sport",
+        "image": "https://img2.carmax.com/assets/25960104/hero.jpg?width=400&height=300",
+        "price": "$61,998",
+        "mileage": "20,000"
       }
     ]
   }
