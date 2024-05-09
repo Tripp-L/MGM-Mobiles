@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./Header";
-import CarPage from "./CarPage";
 import CarList from "./CarList"; 
 import NewCarForm from "./NewCarForm";
 import Navbar from "./Navbar"; 
