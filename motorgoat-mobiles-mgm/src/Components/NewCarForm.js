@@ -5,11 +5,17 @@ import "../App.css";
 function NewCarForm() {
     const [inputValues, setInputValues] = useState({})
     const [submittedListings, setSubmittedListings] = useState([])
+    const [availability, setAvailability] = useState({})
 
     useEffect(() => {
         const storedListings = JSON.parse(localStorage.getItem("submittedListings"))
+        const storedAvailability = JSON.parse(localStorage.getItem("availability"))
+
         if (storedListings) {
             setSubmittedListings(storedListings)
+        }
+        if (storedAvailability) {
+            setAvailability(storedAvailability)
         }
     }, [])
 
@@ -26,42 +32,51 @@ function NewCarForm() {
             return
         }
 
-        const newListing = { ...inputValues }
+        const newListing = { ...inputValues, id: Date.now() }
         setSubmittedListings((prevListings) => [...prevListings, newListing])
+        setAvailability((prevAvailability) => ({ ...prevAvailability, [newListing.id]: true }))
         localStorage.setItem("submittedListings", JSON.stringify([...submittedListings, newListing]))
+        localStorage.setItem("availability", JSON.stringify({ ...availability, [newListing.id]: true }))
         setInputValues({})
     }
 
-    return (
-      <div> 
-        <div className="new-car-form">
-            <form onSubmit={handleSubmit}>
-                <h2>💲 Sell Your Car Here! 💲</h2>
-                <input type="text" name="type" placeholder="Type" value={inputValues.type || ''} onChange={handleInputChange} />
-                <input type="text" name="year" placeholder="Year" value={inputValues.year || ''} onChange={handleInputChange} />
-                <input type="text" name="make" placeholder="Make" value={inputValues.make || ''} onChange={handleInputChange} />
-                <input type="text" name="model" placeholder="Model" value={inputValues.model || ''} onChange={handleInputChange} />
-                <input type="text" name="image" placeholder="Image URL" value={inputValues.image || ''} onChange={handleInputChange} />
-                <input type="text" name="price" placeholder="Price" value={inputValues.price || ''} onChange={handleInputChange} />
-                <button type="submit">Sell!</button>
-            </form>
-        </div>  
-        
-        <div>
+    const handleAvailabilityClick = (id) => {
+        setAvailability((prevAvailability) => ({ ...prevAvailability, [id]: !prevAvailability[id] }))
+        localStorage.setItem("availability", JSON.stringify({ ...availability, [id]: !availability[id] }))
+    }
 
-            {submittedListings.map((listing, index) => (
-                <div className="new-form" key={index}>
-                    <h3>New Listing:</h3>
-                    <Container className="card" data-testid={`car-item-${index}`}>
-                        <img src={listing.image || ''} alt={listing.type || ''} />
-                        <p>{listing.year || ''} {listing.make || ''}</p>
-                        <p>{listing.model || ''}</p>
-                        <p>Price: {listing.price || ''}</p>
-                    </Container>
-                </div>
-            ))}
+    return (
+        <div>
+            <div className="new-car-form">
+                <form onSubmit={handleSubmit}>
+                    <h2>💲 Sell Your Car Here! 💲</h2>
+                    <input type="text" name="type" placeholder="Type" value={inputValues.type || ''} onChange={handleInputChange} />
+                    <input type="text" name="year" placeholder="Year" value={inputValues.year || ''} onChange={handleInputChange} />
+                    <input type="text" name="make" placeholder="Make" value={inputValues.make || ''} onChange={handleInputChange} />
+                    <input type="text" name="model" placeholder="Model" value={inputValues.model || ''} onChange={handleInputChange} />
+                    <input type="text" name="image" placeholder="Image URL" value={inputValues.image || ''} onChange={handleInputChange} />
+                    <input type="text" name="price" placeholder="Price" value={inputValues.price || ''} onChange={handleInputChange} />
+                    <button type="submit">Sell!</button>
+                </form>
+            </div>
+
+            <div>
+                {submittedListings.map((listing) => (
+                    <div className="new-form" key={listing.id}>
+                        <h3>New Listing:</h3>
+                        <Container className="card">
+                            <img src={listing.image || ''} alt={listing.type || ''} />
+                            <p>{listing.year || ''} {listing.make || ''}</p>
+                            <p>{listing.model || ''}</p>
+                            <p>Price: {listing.price || ''}</p>
+                            <button onClick={() => handleAvailabilityClick(listing.id)} className={availability[listing.id] ? "primary" : "secondary"}>
+                                {availability[listing.id] ? "Available!" : "Sold!"}
+                            </button>
+                        </Container>
+                    </div>
+                ))}
+            </div>
         </div>
-      </div>  
     );
 }
 

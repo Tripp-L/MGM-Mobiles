@@ -53,11 +53,11 @@ function App() {
                 <Header setSearchTerm={handleSearch} /> 
                 <Navbar /> 
                 <Routes>
-                    <Route path="/cars" element={searched ? <CarList listings={allListings.filter(car => car.type === 'Car' && car.make.toLowerCase().includes(searchTerm.toLowerCase()))} /> : <CarList listings={listings.filter(car => car.type === 'Car')} />} />
-                    <Route path="/trucks" element={searched ? <CarList listings={allListings.filter(truck => truck.type === 'Truck' && truck.make.toLowerCase().includes(searchTerm.toLowerCase()))} /> : <CarList listings={listings.filter(truck => truck.type === 'Truck')} />} />
-                    <Route path="/suv" element={searched ? <CarList listings={allListings.filter(suv => suv.type === 'SUV' && suv.make.toLowerCase().includes(searchTerm.toLowerCase()))} /> : <CarList listings={listings.filter(suv => suv.type === 'SUV')} />} />
+                    <Route path="/cars" element={<CarList listings={searched ? allListings.filter(car => car.type === 'Car' && car.make.toLowerCase().includes(searchTerm.toLowerCase())) : listings.filter(car => car.type === 'Car')} />} />
+                    <Route path="/trucks" element={<CarList listings={searched ? allListings.filter(truck => truck.type === 'Truck' && truck.make.toLowerCase().includes(searchTerm.toLowerCase())) : listings.filter(truck => truck.type === 'Truck')} />} />
+                    <Route path="/suv" element={<CarList listings={searched ? allListings.filter(suv => suv.type === 'SUV' && suv.make.toLowerCase().includes(searchTerm.toLowerCase())) : listings.filter(suv => suv.type === 'SUV')} />} />
                     <Route path="/new-car" element={<NewCarForm setListings={setNewListings} />} />
-                    <Route path="/" element={searched ? <CarList listings={allListings.filter(item => item.make.toLowerCase().includes(searchTerm.toLowerCase()))} /> : <CarPage />} />
+                    <Route path="/" element={<CarPage />} />
                 </Routes>
             </div>
         </Router>
@@ -65,6 +65,9 @@ function App() {
 }
 
 export default App;
+
+
+
 
 
 
