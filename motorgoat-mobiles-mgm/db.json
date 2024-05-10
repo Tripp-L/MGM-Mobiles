@@ -41,7 +41,7 @@
         "mileage": "10,000"
       },
       {
-        "id": "5",
+        "id": 5,
         "type": "Car",
         "year": "2023",
         "make": "Tesla",
@@ -51,7 +51,7 @@
         "mileage": "11,123"
       },
       {
-        "id": "6",
+        "id": 6,
         "type": "Truck",
         "year": "2023",
         "make": "Nissan",
@@ -61,7 +61,7 @@
         "mileage": "5,000"
       },
       {
-        "id": "7",
+        "id": 7,
         "type": "Truck",
         "year": "2022",
         "make": "GMC",
@@ -71,7 +71,7 @@
         "mileage": "12,000"
       },
       {
-        "id": "8",
+        "id": 8,
         "type": "SUV",
         "year": "2021",
         "make": "BMW",
@@ -81,7 +81,7 @@
         "mileage": "30,000"
       },
       {
-        "id": "9",
+        "id": 9,
         "type": "SUV",
         "year": "2020",
         "make": "Mercedes-Benz",
@@ -91,7 +91,7 @@
         "mileage": "12,123"
       },
       {
-        "id": "10",
+        "id": 10,
         "type": "Car",
         "year": "2023",
         "make": "Jaguar",
@@ -101,7 +101,7 @@
         "mileage": "32,323"
       },
       {
-        "id": "11",
+        "id": 11,
         "type": "Truck",
         "year": "2021",
         "make": "Toyota",
@@ -111,7 +111,7 @@
         "mileage": "12,223"
       },
       {
-        "id": "12",
+        "id": 12,
         "type": "SUV",
         "year": "2022",
         "make": "Lincoln",
@@ -121,7 +121,7 @@
         "mileage": "15,000"
       },
       {
-        "id": "13",
+        "id": 13,
         "type": "Car",
         "year": "2021",
         "make": "Honda",
@@ -131,7 +131,7 @@
         "mileage": "10,000"
       },
       {
-        "id": "14",
+        "id": 14,
         "type": "Truck",
         "year": "2022",
         "make": "Ford",
@@ -141,7 +141,7 @@
         "mileage": "42,000"
       },
       {
-        "id": "15",
+        "id": 15,
         "type": "SUV",
         "year": "2022",
         "make": "Acura",
@@ -151,7 +151,7 @@
         "mileage": "32,000"
       },
       {
-        "id": "16",
+        "id": 16,
         "type": "Car",
         "year": "2019",
         "make": "Dodge",
@@ -161,7 +161,7 @@
         "mileage": "30,000"
       },
       {
-        "id": "17",
+        "id": 17,
         "type": "Truck",
         "year": "2021",
         "make": "Jeep",
@@ -171,7 +171,7 @@
         "mileage": "20,000"
       },
       {
-        "id": "18",
+        "id": 18,
         "type": "SUV",
         "year": "2020",
         "make": "Kia",
@@ -181,7 +181,7 @@
         "mileage": "15,000"
       },
       {
-        "id": "19",
+        "id": 19,
         "type": "Car",
         "year": "2021",
         "make": "BMW",
@@ -191,7 +191,7 @@
         "mileage": "50,000"
       },
       {
-        "id": "20",
+        "id": 20,
         "type": "Truck",
         "year": "2022",
         "make": "GMC",
@@ -201,7 +201,7 @@
         "mileage": "21,000"
       },
       {
-        "id": "21",
+        "id": 21,
         "type": "SUV",
         "year": "2013",
         "make": "Jeep",
@@ -211,7 +211,7 @@
         "mileage": "78,000"
       },
       {
-        "id": "22",
+        "id": 22,
         "type": "Car",
         "year": "2020",
         "make": "Ford",
@@ -221,7 +221,7 @@
         "mileage": "20,000"
       },
       {
-        "id": "23",
+        "id": 23,
         "type": "Truck",
         "year": "2023",
         "make": "Jeep",
@@ -231,7 +231,7 @@
         "mileage": "9,000"
       },
       {
-        "id": "24",
+        "id": 24,
         "type": "SUV",
         "year": "2018",
         "make": "Toyota",
@@ -241,7 +241,7 @@
         "mileage": "123,000"
       },
       {
-        "id": "25",
+        "id": 25,
         "type": "Car",
         "year": "2023",
         "make": "Chevrolet ",
@@ -251,7 +251,7 @@
         "mileage": "10,000"
       },
       {
-        "id": "26",
+        "id": 26,
         "type": "Truck",
         "year": "2023",
         "make": "Toyota",
@@ -261,7 +261,7 @@
         "mileage": "3,000"
       },
       {
-        "id": "27",
+        "id": 27,
         "type": "SUV",
         "year": "2020",
         "make": "Lexus",
@@ -271,7 +271,7 @@
         "mileage": "28,000"
       },
       {
-        "id": "28",
+        "id": 28,
         "type": "Car",
         "year": "2020",
         "make": "Volkswagen",
@@ -281,7 +281,7 @@
         "mileage": "22,343"
       },
       {
-        "id": "29",
+        "id": 29,
         "type": "Truck",
         "year": "2020",
         "make": "Ford",
@@ -291,7 +291,7 @@
         "mileage": "34,000"
       },
       {
-        "id": "30",
+        "id": 30,
         "type": "SUV",
         "year": "2013",
         "make": "Ford",
@@ -301,7 +301,7 @@
         "mileage": "92,000"
       },
       {
-        "id": "31",
+        "id": 31,
         "type": "Car",
         "year": "2022",
         "make": "Lamborghini",
@@ -311,7 +311,7 @@
         "mileage": "1,820"
       },
       {
-        "id": "32",
+        "id": 32,
         "type": "Car",
         "year": "2023",
         "make": "Lamborghini",
@@ -321,7 +321,7 @@
         "mileage": "936"
       },
       {
-        "id": "33",
+        "id": 33,
         "type": "SUV",
         "year": "2021",
         "make": "Cadillac",
@@ -331,7 +331,7 @@
         "mileage": "33,000"
       },
       {
-        "id": "34",
+        "id": 34,
         "type": "SUV",
         "year": "2018",
         "make": "Cadillac",
@@ -341,7 +341,7 @@
         "mileage": "52,000"
       },
       {
-        "id": "35",
+        "id": 35,
         "type": "Truck",
         "year": "2019",
         "make": "Ford",
@@ -351,7 +351,7 @@
         "mileage": "39,000"
       },
       {
-        "id": "36",
+        "id": 36,
         "type": "Truck",
         "year": "2021",
         "make": "Jeep",
@@ -361,7 +361,7 @@
         "mileage": "18,000"
       },
       {
-        "id": "37",
+        "id": 37,
         "type": "Car",
         "year": "2014",
         "make": "Hyundai",
@@ -371,7 +371,7 @@
         "mileage": "73,000"
       },
       {
-        "id": "38",
+        "id": 38,
         "type": "SUV",
         "year": "2021",
         "make": "Nissan",
@@ -381,7 +381,7 @@
         "mileage": "20,000"
       },
       {
-        "id": "39",
+        "id": 39,
         "type": "Car",
         "year": "2021",
         "make": "Chevrolet",
@@ -391,7 +391,7 @@
         "mileage": "11,000"
       },
       {
-        "id": "40",
+        "id": 40,
         "type": "Car",
         "year": "2019",
         "make": "Chevrolet",
@@ -401,7 +401,7 @@
         "mileage": "20,000"
       },
       {
-        "id": "41",
+        "id": 41,
         "type": "Truck",
         "year": "2021",
         "make": "Chevrolet",
@@ -411,7 +411,7 @@
         "mileage": "38,000"
       },
       {
-        "id": "42",
+        "id": 42,
         "type": "Truck",
         "year": "2023",
         "make": "Chevrolet",
@@ -421,7 +421,7 @@
         "mileage": "33,000"
       },
       {
-        "id": "43",
+        "id": 43,
         "type": "Truck",
         "year": "2023",
         "make": "Nissan",
@@ -431,7 +431,7 @@
         "mileage": "9,000"
       },
       {
-        "id": "44",
+        "id": 44,
         "type": "SUV",
         "year": "2022",
         "make": "Ford",
@@ -441,7 +441,7 @@
         "mileage": "39,000"
       },
       {
-        "id": "45",
+        "id": 45,
         "type": "SUV",
         "year": "2020",
         "make": "Mazda",
@@ -451,7 +451,7 @@
         "mileage": "40,000"
       },
       {
-        "id": "46",
+        "id": 46,
         "type": "Car",
         "year": "2022",
         "make": "Toyota",
@@ -461,7 +461,7 @@
         "mileage": "13,000"
       },
       {
-        "id": "47",
+        "id": 47,
         "type": "Truck",
         "year": "2022",
         "make": "Ram",
@@ -471,7 +471,7 @@
         "mileage": "18,000"
       },
       {
-        "id": "48",
+        "id": 48,
         "type": "SUV",
         "year": "2021",
         "make": "Hyundai",
@@ -481,7 +481,7 @@
         "mileage": "49,000"
       },
       {
-        "id": "49",
+        "id": 49,
         "type": "Car",
         "year": "2019",
         "make": "Audi",
@@ -491,7 +491,7 @@
         "mileage": "29,000"
       },
       {
-        "id": "50",
+        "id": 50,
         "type": "Truck",
         "year": "2021",
         "make": "Ram",
@@ -501,7 +501,7 @@
         "mileage": "9,000"
       },
       {
-        "id": "40",
+        "id": 51,
         "type": "SUV",
         "year": "2021",
         "make": "Chevrolet",
