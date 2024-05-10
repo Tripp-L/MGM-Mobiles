@@ -235,7 +235,7 @@
         "type": "SUV",
         "year": "2018",
         "make": "Toyota",
-        "model": "$Runner",
+        "model": "4Runner",
         "image": "https://img2.carmax.com/assets/25868635/hero.jpg?width=400&height=300",
         "price": "$24,998",
         "mileage": "123,000"
@@ -399,6 +399,116 @@
         "image": "https://img2.carmax.com/assets/25960104/hero.jpg?width=400&height=300",
         "price": "$61,998",
         "mileage": "20,000"
+      },
+      {
+        "id": "41",
+        "type": "Truck",
+        "year": "2021",
+        "make": "Chevrolet",
+        "model": "Colorado LT",
+        "image": "https://img2.carmax.com/assets/25488458/hero.jpg?width=800&height=450",
+        "price": "$24,998",
+        "mileage": "38,000"
+      },
+      {
+        "id": "42",
+        "type": "Truck",
+        "year": "2023",
+        "make": "Chevrolet",
+        "model": "Silverado 1500 Custom Trail Boss",
+        "image": "https://img2.carmax.com/assets/25748064/hero.jpg?width=800&height=450",
+        "price": "$43,998",
+        "mileage": "33,000"
+      },
+      {
+        "id": "43",
+        "type": "Truck",
+        "year": "2023",
+        "make": "Nissan",
+        "model": "Frontier S",
+        "image": "https://img2.carmax.com/assets/25669013/hero.jpg?width=800&height=450",
+        "price": "$31,998",
+        "mileage": "9,000"
+      },
+      {
+        "id": "44",
+        "type": "SUV",
+        "year": "2022",
+        "make": "Ford",
+        "model": "Explorer Timberline",
+        "image": "https://img2.carmax.com/assets/25488073/hero.jpg?width=800&height=450",
+        "price": "$35,998",
+        "mileage": "39,000"
+      },
+      {
+        "id": "45",
+        "type": "SUV",
+        "year": "2020",
+        "make": "Mazda",
+        "model": "CX-5 Touring",
+        "image": "https://img2.carmax.com/assets/25311347/hero.jpg?width=800&height=450",
+        "price": "$24,998",
+        "mileage": "40,000"
+      },
+      {
+        "id": "46",
+        "type": "Car",
+        "year": "2022",
+        "make": "Toyota",
+        "model": "Supra 3.0 Premium",
+        "image": "https://img2.carmax.com/assets/25739743/hero.jpg?width=800&height=450",
+        "price": "$58,998",
+        "mileage": "13,000"
+      },
+      {
+        "id": "47",
+        "type": "Truck",
+        "year": "2022",
+        "make": "Ram",
+        "model": "1500 Bighorn",
+        "image": "https://img2.carmax.com/assets/25030855/hero.jpg?width=800&height=450",
+        "price": "$36,998",
+        "mileage": "18,000"
+      },
+      {
+        "id": "48",
+        "type": "SUV",
+        "year": "2021",
+        "make": "Hyundai",
+        "model": "Kona SEL",
+        "image": "https://img2.carmax.com/assets/25576173/hero.jpg?width=800&height=450",
+        "price": "$19,998",
+        "mileage": "49,000"
+      },
+      {
+        "id": "49",
+        "type": "Car",
+        "year": "2019",
+        "make": "Audi",
+        "model": "e-tron Premium Plus",
+        "image": "https://img2.carmax.com/assets/24687927/hero.jpg?width=800&height=450",
+        "price": "$29,998",
+        "mileage": "29,000"
+      },
+      {
+        "id": "50",
+        "type": "Truck",
+        "year": "2021",
+        "make": "Ram",
+        "model": "2500 Tradesman",
+        "image": "https://img2.carmax.com/assets/25631872/hero.jpg?width=800&height=450",
+        "price": "$39,998",
+        "mileage": "9,000"
+      },
+      {
+        "id": "40",
+        "type": "SUV",
+        "year": "2021",
+        "make": "Chevrolet",
+        "model": "TrailBlazer LS",
+        "image": "https://img2.carmax.com/assets/25817062/hero.jpg?width=800&height=450",
+        "price": "$20,998",
+        "mileage": "39,000"
       }
     ]
   }

@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+This is, MotorGOAT-Mobiles, an app that users can go to buy and sell cars, trucks, and suvs, with ease!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+On this app a user will be be able to use the search bar to shop for any kind of vehicle by type, year, make, model, and price!
 
-## Available Scripts
+This app comes with an easy-to-use, well designed navigation bar located right under the search bar!
 
-In the project directory, you can run:
+The navigation bar contains 5 client side routes (pages) that help the user navigate to find their dream ride!
 
-### `npm start`
+The navigation bar is set with categories of different types of vehicles: Cars, Trucks and SUVs. Feel free to search with ease by leaving your search words in the search bar as you shop each page. For instance, if you are a Toyota person, leave 'Toyota' in the search bar as you browse through the different pages of vehicles to only see the Toyota selections!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+While shopping, if you find a listing you like, go ahead and click the green 'Available!' button conviently located above each listing image and it will turn red to mark your new car as 'Sold!'. Feel free to buy more than one vehicle and mark them as 'Sold!' as well. If you change your mind and find something better, go ahead and click the red 'Sold!' button to change it back to 'Available!' for other users!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The other 2 pages include the 'Home' page, where you can easily return to the home page to restart your searching journey!
 
-### `npm test`
+The last page is created to help you make some money! This is the 'Sell Your Car Here!!' page, and it's exactly what it sounds like. Navigate to this page to list your vehicle by filling out the form with the 'type', 'year', 'make', 'model', 'price', and a url for an image of the vehicle so that shoppers can have all the info they need to buy it!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After you've filled out the form, click on the 'Sell!' button to see your nicely designed listing. Keep checking back to this page to see if someone has bought your vehicle when the green 'Available!' button turns to a red 'Sold!' button!
 
-### `npm run build`
+If the user experiences any issues with the car buying process or runs into any issues using the app, they can contact us via phone or email. If you enjoy the app, and want to see reviews from other users or more listings, you can follow us on the social media networks, all located at the bottom of the page for your convenvience!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy MotorGOAT-Mobiles, follow us on social media and let us know about your experience!

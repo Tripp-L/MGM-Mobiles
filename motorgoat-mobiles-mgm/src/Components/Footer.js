@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Stack, Image, Nav, NavLink } from "react-bootstrap"
+import { Container, Row, Col, Stack, Image } from "react-bootstrap"
 import "../Footer.css"
 
 
