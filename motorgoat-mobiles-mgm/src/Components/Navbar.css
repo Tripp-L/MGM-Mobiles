@@ -1,0 +1,55 @@
+.navbar {
+    background-color: transparent;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+    border: 3px solid #61dafb;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 20px auto;
+    box-shadow: 0 10px 50px #61dafb;
+}
+
+.navrow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+    /* Add some gap between the items */
+    padding-inline: 28px;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #61dafb;
+    text-decoration: underline;
+    padding: 10px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+.nav-image {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px #61dafb;
+    margin-bottom: 10px;
+    /* Add margin below the image to space it from the text */
+}
+
+.nav-text {
+    font-size: 30px;
+    color: #61dafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Sedgwick Ave Display";
+}

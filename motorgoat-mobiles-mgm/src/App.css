@@ -32,13 +32,14 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
 Header {
-  background-image: url('https://www.co.wallowa.or.us/sites/g/files/vyhlif10466/files/media/home-page/image/71/road.jpg');
+  background-image: url('https://media.istockphoto.com/id/157643379/photo/endless-highway-iceland-highlands.jpg?b=1&s=170667a&w=0&k=20&c=9ZYi9Lvn2VYhrnMbDylsX2L425-Le9tJLW9K5RT3fz8=');
   background-size: cover;
   box-shadow: 0 10px 50px #61dafb;
 }
@@ -60,78 +61,10 @@ Header {
   box-shadow: 0 20px 80px black;
 }
 
-.navbar {
-  background-color: transparent;
-  font-size: 16px;
-  padding: 10px;
-  font-family: Arial;
-  text-align: center;
-  font-weight: lighter;
-  color: White;
-  border: #61dafb solid;
-  border-width: 3px;
-  border-radius: 100px;
-  width: fit-content; 
-  margin: 0 auto;
-  box-shadow: 0 10px 50px #61dafb;
-}
 
-.navrow {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.nav-link {
-  position: relative;
-  color: #61dafb;
-  text-decoration: none;
-  align-items: center;
-  display: flex; 
-  padding: 10px; 
-  margin: 0 10px; 
-  transition: border-color 0.6s ease;
-}
-
-.nav-link:hover {
-  border-left: .5px solid #61dafb; 
-  border-top: none; 
-  border-bottom: none; 
-}
-
-.nav-link:hover::after {
-  content: '';
-  display: block;
-  width: 50px; 
-  height: 2px; 
-  background-color: #61dafb;
-  position: absolute;
-  bottom: -2px; 
-  left: 0; 
-}
-
-.nav-image {
-  width: 150px;
-  height: 100px;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 20px 20px #61dafb;
-}
-
-.nav-text {
-  position: relative;
-  top: 15px;
-  left: -105px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.nav-image#sell {
-  position: relative;
-  left: 40px;
-}
-
-.new-car-form {
-  max-width: 550px; 
+.new-car-form,
+.get-approved-form {
+  max-width: 550px;
   margin: 0 auto;
   margin-top: 30px;
   padding: 20px;
@@ -147,7 +80,9 @@ Header {
   color: #61dafb;
   text-shadow: -2px -2px 0 #000, -2px -2px #000;
 }
-.new-listings-heading {
+
+.new-listings-heading,
+.section-heading {
   font-family: "Sedgwick Ave Display";
   text-decoration: underline;
   text-align: center;
@@ -189,17 +124,17 @@ button[type="submit"]:hover {
   font-size: 20px;
   text-align: center;
   color: #61dafb;
-  width: 280px; 
-  margin-right: 20px; 
-  margin-bottom: 20px; 
+  width: 280px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #ddd;
   border-width: 0.5px;
-  box-shadow: 0 4px 8px ;
-  background-color: #fff; 
+  box-shadow: 0 4px 8px;
+  background-color: #fff;
   display: inline-block;
-  vertical-align: top; 
+  vertical-align: top;
   box-sizing: border-box;
 }
 
@@ -209,7 +144,7 @@ button[type="submit"]:hover {
   left: 40%;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; 
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -218,7 +153,7 @@ label {
 }
 
 .search-input {
-  width: 300px; 
+  width: 300px;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -240,16 +175,16 @@ label {
 
 
 .search-input::placeholder {
-  color: #000; 
-  opacity: 1; 
+  color: #000;
+  opacity: 1;
 }
 
 .listings-container {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px; 
-  justify-content: center; 
+  gap: 5px;
+  justify-content: center;
 }
 
 .listing {
@@ -257,17 +192,17 @@ label {
   font-size: 20px;
   text-align: left;
   color: #61dafb;
-  width: 280px; 
-  margin-right: 20px; 
-  margin-bottom: 20px; 
+  width: 280px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid #ddd;
   border-width: 0.5px;
-  box-shadow: 0 4px 8px ;
-  background-color: #fff; 
+  box-shadow: 0 4px 8px;
+  background-color: #fff;
   display: inline-block;
-  vertical-align: top; 
+  vertical-align: top;
   box-sizing: border-box;
 }
 
@@ -280,7 +215,7 @@ label {
 
 .listing p {
   text-align: center;
-  margin-bottom: 8px; 
+  margin-bottom: 8px;
 }
 
 .listing h3 {
@@ -324,10 +259,3 @@ label {
 .listing-details button {
   margin-right: 1000px;
 }
-
-
-
-
-
-
-
